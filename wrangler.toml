@@ -13,3 +13,6 @@ compatibility_date = "2023-05-26"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
 UUID = "84c983bc-36c7-4a5f-9fd7-2beec4cade9a"
+
+[placement]
+mode = "smart"
