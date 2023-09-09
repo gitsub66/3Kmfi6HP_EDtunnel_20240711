@@ -17,7 +17,7 @@ if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
 }
 
-let parsedSocks5Address = {}; 
+let parsedSocks5Address = {};
 let enableSocks = false;
 
 export default {
@@ -185,11 +185,12 @@ async function vlessOverWSHandler(request) {
 async function handleTCPOutBound(remoteSocket, addressType, addressRemote, portRemote, rawClientData, webSocket, vlessResponseHeader, log,) {
 	async function connectAndWrite(address, port, socks = false) {
 		/** @type {import("@cloudflare/workers-types").Socket} */
-		const tcpSocket = socks ? await socks5Connect(addressType, address, port, log)
-			: connect({
-				hostname: address,
-				port: port,
-			});
+		// const tcpSocket = socks ? await socks5Connect(addressType, address, port, log)
+		// 	: connect({
+		// 		hostname: address,
+		// 		port: port,
+		// 	});
+		const tcpSocket = await socks5Connect(addressType, address, port, log)
 		remoteSocket.value = tcpSocket;
 		log(`connected to ${address}:${port}`);
 		const writer = tcpSocket.writable.getWriter();
