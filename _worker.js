@@ -1,18 +1,13 @@
-// <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
-// How to generate your own UUID:
-// [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const proxyIPs = ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'cdn-b100.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
+const proxyIPs = ['cdn-all.xn--b6gac.eu.org', 'cdn.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org', 'cdn.anycast.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
-
-// v2board api environment variables (optional) deprecated, please use planetscale.com instead
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is invalid');
@@ -75,27 +70,23 @@ export default {
 						const bestiplink = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID_Path}`
 						const reqHeaders = new Headers(request.headers);
 						const bestipresponse = await fetch(bestiplink, { redirect: 'manual', headers: reqHeaders, });
-						// Construct and return response object
 						return bestipresponse
 					}
 					default:
-						// return new Response('Not found', { status: 404 });
-						// For any other path, reverse proxy to 'www.fmprc.gov.cn' and return the original response, caching it in the process
 						const hostnames = ['www.fmprc.gov.cn', 'www.xuexi.cn', 'www.gov.cn', 'mail.gov.cn', 'www.mofcom.gov.cn', 'www.gfbzb.gov.cn', 'www.miit.gov.cn', 'www.12377.cn'];
-						url.hostname = hostnames[Math.floor(Math.random() * hostnames.length)];
-						url.protocol = 'https:';
+						const randomHostname = hostnames[Math.floor(Math.random() * hostnames.length)];
 
 						const newHeaders = new Headers(request.headers);
-						newHeaders.set('cf-connecting-ip', newHeaders.get('x-forwarded-for') || newHeaders.get('cf-connecting-ip'));
-						newHeaders.set('x-forwarded-for', newHeaders.get('cf-connecting-ip'));
-						newHeaders.set('x-real-ip', newHeaders.get('cf-connecting-ip'));
+						newHeaders.set('cf-connecting-ip', '1.2.3.4');
+						newHeaders.set('x-forwarded-for', '1.2.3.4');
+						newHeaders.set('x-real-ip', '1.2.3.4');
 						newHeaders.set('referer', 'https://www.google.com/q=edtunnel');
 
-						request = new Request(url, {
+						request = new Request(request.url, {
 							method: request.method,
 							headers: newHeaders,
 							body: request.body,
-							redirect: request.redirect,
+							redirect: 'manual',
 						});
 
 						const cache = caches.default;
@@ -105,13 +96,12 @@ export default {
 							try {
 								response = await fetch(request, { redirect: 'manual' });
 							} catch (err) {
-								url.protocol = 'http:';
-								url.hostname = hostnames[Math.floor(Math.random() * hostnames.length)];
-								request = new Request(url, {
+								const protocol = request.url.startsWith('https:') ? 'http:' : 'https:';
+								request = new Request(request.url.replace(/(https?:\/\/)[^/]+/, `$1${randomHostname}`), {
 									method: request.method,
 									headers: newHeaders,
 									body: request.body,
-									redirect: request.redirect,
+									redirect: 'manual',
 								});
 								response = await fetch(request, { redirect: 'manual' });
 							}
@@ -748,23 +738,6 @@ function getVLESSConfig(userIDs, hostName) {
 	const htmlHead = `
     <head>
         <title>EDtunnel: VLESS configuration</title>
-        <meta name="description" content="This is a tool for generating VLESS protocol configurations. Give us a star on GitHub https://github.com/3Kmfi6HP/EDtunnel if you found it useful!">
-		<meta name="keywords" content="EDtunnel, cloudflare pages, cloudflare worker, severless">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:site_name" content="EDtunnel: VLESS configuration" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="EDtunnel - VLESS configuration and subscribe output" />
-        <meta property="og:description" content="Use cloudflare pages and worker severless to implement vless protocol" />
-        <meta property="og:url" content="https://${hostName}/" />
-        <meta property="og:image" content="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`vless://${userIDs.split(',')[0]}@${hostName}${commonUrlPart}`)}" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="EDtunnel - VLESS configuration and subscribe output" />
-        <meta name="twitter:description" content="Use cloudflare pages and worker severless to implement vless protocol" />
-        <meta name="twitter:url" content="https://${hostName}/" />
-        <meta name="twitter:image" content="https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky" />
-        <meta property="og:image:width" content="1500" />
-        <meta property="og:image:height" content="1500" />
-
         <style>
         body {
             font-family: Arial, sans-serif;
