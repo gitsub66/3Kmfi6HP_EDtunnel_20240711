@@ -305,7 +305,23 @@ function canOutboundUDPVia(protocolName) {
 	}
 	return false;
 }
-
+export const cn_hostnames = [
+	'weibo.com',
+	'www.baidu.com',
+	'www.qq.com',
+	'www.taobao.com',
+	'www.jd.com',
+	'www.sina.com.cn',
+	'www.sohu.com',
+	'www.tmall.com',
+	'www.163.com',
+	'www.zhihu.com',
+	'www.youku.com',
+	'www.xinhuanet.com',
+	'www.douban.com',
+	'www.meituan.com',
+	'www.toutiao.com'
+];
 /**
  * Sets the configuration from the environment variables.
  *
@@ -504,62 +520,6 @@ export default {
 		}
 	},
 };
-
-const hostnames = [
-	'weibo.com',
-	'www.baidu.com',
-	'www.qq.com',
-	'www.taobao.com',
-	'www.jd.com',
-	'www.sina.com.cn',
-	'www.sohu.com',
-	'www.tmall.com',
-	'www.163.com',
-	'www.zhihu.com',
-	'www.youku.com',
-	'www.xinhuanet.com',
-	'www.douban.com',
-	'www.meituan.com',
-	'www.toutiao.com'
-];
-const randomHostname = hostnames[Math.floor(Math.random() * hostnames.length)];
-
-export async function fetchWithCache(request) {
-	const newHeaders = new Headers(request.headers);
-	newHeaders.set('cf-connecting-ip', '1.2.3.4');
-	newHeaders.set('x-forwarded-for', '1.2.3.4');
-	newHeaders.set('x-real-ip', '1.2.3.4');
-	newHeaders.set('referer', 'https://www.google.com/q=edtunnel');
-
-	let modifiedRequest = new Request(request.url, {
-		method: request.method,
-		headers: newHeaders,
-		body: request.body,
-		redirect: 'manual'
-	});
-
-	const cache = caches.default;
-	let response = await cache.match(modifiedRequest);
-
-	if (!response) {
-		try {
-			response = await fetch(modifiedRequest, { redirect: 'manual' });
-		} catch (err) {
-			const newURL = modifiedRequest.url.replace(/(https?:\/\/)[^/]+/, `$1${randomHostname}`);
-			modifiedRequest = new Request(newURL, {
-				method: request.method,
-				headers: newHeaders,
-				body: request.body,
-				redirect: 'manual'
-			});
-			response = await fetch(modifiedRequest, { redirect: 'manual' });
-		}
-
-		cache.put(modifiedRequest, response);
-	}
-
-	return response;
-}
 
 
 /** @type {import("./workers").redirectConsoleLog} */

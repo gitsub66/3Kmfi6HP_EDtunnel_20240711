@@ -1,4 +1,4 @@
-import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler, fetchWithCache } from './utils.js';
+import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler, cn_hostnames } from './utils.js';
 
 /**
  * Entry point function for processing requests.
@@ -10,7 +10,6 @@ export async function onRequest(context) {
     const {
         request, // Original request object including client's request information
         env,     // Worker environment variables
-        ctx
     } = context;
 
     if (env.LOGPOST) {
@@ -24,14 +23,20 @@ export async function onRequest(context) {
         // Check if the request is not a WebSocket upgrade request
         if (!upgradeHeader || upgradeHeader !== 'websocket') {
             const url = new URL(request.url);
-
+            const userAgentRegex = /bot|robot|BOT|Bot/;
             // Handle different URL paths
             switch (url.pathname) {
                 case '/cf':
-                    // Return a response with the Cloudflare information in JSON format
-                    return new Response(JSON.stringify(request.cf), { status: 200 });
+                    // Check if the request has a matching user-agent pattern
+                    if (!userAgentRegex.test(request.headers.get('User-Agent'))) {
+                        // Return a response with the Cloudflare information in JSON format
+                        return new Response(JSON.stringify(request.cf), { status: 200 });
+                    }
+                    // Return an error response with a forbidden status code
+                    return new Response('Access Forbidden', { status: 403 });
                 case `/${globalConfig.userID}`:
-                    {
+                    // Check if the request has a matching user-agent pattern
+                    if (!userAgentRegex.test(request.headers.get('User-Agent'))) {
                         // Get VLESS config based on the Host header and return it as a response
                         const vlessConfig = getVLESSConfig(request.headers.get('Host'));
                         return new Response(`${vlessConfig}`, {
@@ -41,8 +46,33 @@ export async function onRequest(context) {
                             }
                         });
                     }
+                    // Return an error response with a forbidden status code
+                    return new Response('Access Forbidden', { status: 403 });
                 default:
-                    return await fetchWithCache(request);
+                    const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
+                    const newHeaders = new Headers(request.headers);
+                    newHeaders.set('cf-connecting-ip', '1.2.3.4');
+                    newHeaders.set('x-forwarded-for', '1.2.3.4');
+                    newHeaders.set('x-real-ip', '1.2.3.4');
+                    newHeaders.set('referer', 'https://www.google.com/search?q=edtunnel');
+                    // Use fetch to proxy the request to 15 different domains
+                    const proxyUrl = 'https://' + randomHostname + url.pathname + url.search;
+                    let modifiedRequest = new Request(proxyUrl, {
+                        method: request.method,
+                        headers: newHeaders,
+                        body: request.body,
+                        redirect: 'manual',
+                    });
+                    const proxyResponse = await fetch(modifiedRequest, { redirect: 'manual' });
+                    // Check for 302 or 301 redirect status and return an error response
+                    if ([301, 302].includes(proxyResponse.status)) {
+                        return new Response(`Redirects to ${randomHostname} are not allowed.`, {
+                            status: 403,
+                            statusText: 'Forbidden',
+                        });
+                    }
+                    // Return the response from the proxy server
+                    return proxyResponse;
             }
         } else {
             /** 
