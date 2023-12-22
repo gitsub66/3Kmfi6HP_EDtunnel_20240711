@@ -305,23 +305,85 @@ function canOutboundUDPVia(protocolName) {
 	}
 	return false;
 }
+
 export const cn_hostnames = [
-	'weibo.com',
-	'www.baidu.com',
-	'www.qq.com',
-	'www.taobao.com',
-	'www.jd.com',
-	'www.sina.com.cn',
-	'www.sohu.com',
-	'www.tmall.com',
-	'www.163.com',
-	'www.zhihu.com',
-	'www.youku.com',
-	'www.xinhuanet.com',
-	'www.douban.com',
-	'www.meituan.com',
-	'www.toutiao.com'
+	'weibo.com',                // Weibo - A popular social media platform
+	'www.baidu.com',            // Baidu - The largest search engine in China
+	'www.qq.com',               // QQ - A widely used instant messaging platform
+	'www.taobao.com',           // Taobao - An e-commerce website owned by Alibaba Group
+	'www.jd.com',               // JD.com - One of the largest online retailers in China
+	'www.sina.com.cn',          // Sina - A Chinese online media company
+	'www.sohu.com',             // Sohu - A Chinese internet service provider
+	'www.tmall.com',            // Tmall - An online retail platform owned by Alibaba Group
+	'www.163.com',              // NetEase Mail - One of the major email providers in China
+	'www.zhihu.com',            // Zhihu - A popular question-and-answer website
+	'www.youku.com',            // Youku - A Chinese video sharing platform
+	'www.xinhuanet.com',        // Xinhua News Agency - Official news agency of China
+	'www.douban.com',           // Douban - A Chinese social networking service
+	'www.meituan.com',          // Meituan - A Chinese group buying website for local services
+	'www.toutiao.com',          // Toutiao - A news and information content platform
+	'www.ifeng.com',            // iFeng - A popular news website in China
+	'www.autohome.com.cn',      // Autohome - A leading Chinese automobile online platform
+	'www.360.cn',               // 360 - A Chinese internet security company
+	'www.douyin.com',           // Douyin - A Chinese short video platform
+	'www.kuaidi100.com',        // Kuaidi100 - A Chinese express delivery tracking service
+	'www.wechat.com',           // WeChat - A popular messaging and social media app
+	'www.csdn.net',             // CSDN - A Chinese technology community website
+	'www.imgo.tv',              // ImgoTV - A Chinese live streaming platform
+	'www.aliyun.com',           // Alibaba Cloud - A Chinese cloud computing company
+	'www.eyny.com',             // Eyny - A Chinese multimedia resource-sharing website
+	'www.mgtv.com',             // MGTV - A Chinese online video platform
+	'www.xunlei.com',           // Xunlei - A Chinese download manager and torrent client
+	'www.hao123.com',           // Hao123 - A Chinese web directory service
+	'www.bilibili.com',         // Bilibili - A Chinese video sharing and streaming platform
+	'www.youth.cn',             // Youth.cn - A China Youth Daily news portal
+	'www.hupu.com',             // Hupu - A Chinese sports community and forum
+	'www.youzu.com',            // Youzu Interactive - A Chinese game developer and publisher
+	'www.panda.tv',             // Panda TV - A Chinese live streaming platform
+	'www.tudou.com',            // Tudou - A Chinese video-sharing website
+	'www.zol.com.cn',           // ZOL - A Chinese electronics and gadgets website
+	'www.toutiao.io',           // Toutiao - A news and information app
+	'www.tiktok.com',           // TikTok - A Chinese short-form video app
+	'www.netease.com',          // NetEase - A Chinese internet technology company
+	'www.cnki.net',             // CNKI - China National Knowledge Infrastructure, an information aggregator
+	'www.zhibo8.cc',            // Zhibo8 - A website providing live sports streams
+	'www.zhangzishi.cc',        // Zhangzishi - Personal website of Zhang Zishi, a public intellectual in China
+	'www.xueqiu.com',           // Xueqiu - A Chinese online social platform for investors and traders
+	'www.qqgongyi.com',         // QQ Gongyi - Tencent's charitable foundation platform
+	'www.ximalaya.com',         // Ximalaya - A Chinese online audio platform
+	'www.dianping.com',         // Dianping - A Chinese online platform for finding and reviewing local businesses
+	'www.suning.com',           // Suning - A leading Chinese online retailer
+	'www.zhaopin.com',          // Zhaopin - A Chinese job recruitment platform
+	'www.jianshu.com',          // Jianshu - A Chinese online writing platform
+	'www.mafengwo.cn',          // Mafengwo - A Chinese travel information sharing platform
+	'www.51cto.com',            // 51CTO - A Chinese IT technical community website
+	'www.qidian.com',           // Qidian - A Chinese web novel platform
+	'www.ctrip.com',            // Ctrip - A Chinese travel services provider
+	'www.pconline.com.cn',      // PConline - A Chinese technology news and review website
+	'www.cnzz.com',             // CNZZ - A Chinese web analytics service provider
+	'www.telegraph.co.uk',      // The Telegraph - A British newspaper website	
+	'www.ynet.com',             // Ynet - A Chinese news portal
+	'www.ted.com',              // TED - A platform for ideas worth spreading
+	'www.renren.com',           // Renren - A Chinese social networking service
+	'www.pptv.com',             // PPTV - A Chinese online video streaming platform
+	'www.liepin.com',           // Liepin - A Chinese online recruitment website
+	'www.881903.com',           // 881903 - A Hong Kong radio station website
+	'www.aipai.com',            // Aipai - A Chinese online video sharing platform
+	'www.ttpaihang.com',        // Ttpaihang - A Chinese celebrity popularity ranking website
+	'www.quyaoya.com',          // Quyaoya - A Chinese online ticketing platform
+	'www.91.com',               // 91.com - A Chinese software download website
+	'www.dianyou.cn',           // Dianyou - A Chinese game information website
+	'www.tmtpost.com',          // TMTPost - A Chinese technology media platform
+	'www.douban.com',           // Douban - A Chinese social networking service
+	'www.guancha.cn',           // Guancha - A Chinese news and commentary website
+	'www.so.com',               // So.com - A Chinese search engine
+	'www.58.com',               // 58.com - A Chinese classified advertising website
+	'www.google.com',           // Google - A multinational technology company
+	'www.cnblogs.com',          // Cnblogs - A Chinese technology blog community
+	'www.cntv.cn',              // CCTV - China Central Television official website
+	'www.secoo.com',            // Secoo - A Chinese luxury e-commerce platform
 ];
+
 /**
  * Sets the configuration from the environment variables.
  *
@@ -470,14 +532,20 @@ export default {
 			// Check if the request is not a WebSocket upgrade request
 			if (!upgradeHeader || upgradeHeader !== 'websocket') {
 				const url = new URL(request.url);
-
+				const userAgentRegex = /bot|robot|BOT|Bot/;
 				// Handle different URL paths
 				switch (url.pathname) {
-					case '/':
-						// Return a response with the Cloudflare information in JSON format
-						return new Response(JSON.stringify(request.cf), { status: 200 });
+					case '/cf':
+						// Check if the request has a matching user-agent pattern
+						if (!userAgentRegex.test(request.headers.get('User-Agent'))) {
+							// Return a response with the Cloudflare information in JSON format
+							return new Response(JSON.stringify(request.cf), { status: 200 });
+						}
+						// Return an error response with a forbidden status code
+						return new Response('Access Forbidden', { status: 403 });
 					case `/${globalConfig.userID}`:
-						{
+						// Check if the request has a matching user-agent pattern
+						if (!userAgentRegex.test(request.headers.get('User-Agent'))) {
 							// Get VLESS config based on the Host header and return it as a response
 							const vlessConfig = getVLESSConfig(request.headers.get('Host'));
 							return new Response(`${vlessConfig}`, {
@@ -487,13 +555,39 @@ export default {
 								}
 							});
 						}
+						// Return an error response with a forbidden status code
+						return new Response('Access Forbidden', { status: 403 });
 					default:
-						// Return a "Not found" response for any other URL path
-						return new Response('Not found', { status: 404 });
+						const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
+						const newHeaders = new Headers(request.headers);
+						newHeaders.set('cf-connecting-ip', '1.2.3.4');
+						newHeaders.set('x-forwarded-for', '1.2.3.4');
+						newHeaders.set('x-real-ip', '1.2.3.4');
+						newHeaders.set('referer', 'https://www.google.com/search?q=edtunnel');
+						// Use fetch to proxy the request to 15 different domains
+						const proxyUrl = 'https://' + randomHostname + url.pathname + url.search;
+						let modifiedRequest = new Request(proxyUrl, {
+							method: request.method,
+							headers: newHeaders,
+							body: request.body,
+							redirect: 'manual',
+						});
+						const proxyResponse = await fetch(modifiedRequest, { redirect: 'manual' });
+						// Check for 302 or 301 redirect status and return an error response
+						if ([301, 302].includes(proxyResponse.status)) {
+							return new Response(`Redirects to ${randomHostname} are not allowed.`, {
+								status: 403,
+								statusText: 'Forbidden',
+							});
+						}
+						// Return the response from the proxy server
+						return proxyResponse;
 				}
 			} else {
-				/** @type {WebSocket[]} */
-				// @ts-ignore
+				/** 
+				 * Accept WebSocket connection and handle VLESS over WebSocket.
+				 * Returns a response with the appropriate status code and the client WebSocket.
+				 */
 				const webSocketPair = new WebSocketPair();
 				const [client, webSocket] = Object.values(webSocketPair);
 
@@ -509,12 +603,11 @@ export default {
 				// Return a response with the appropriate status code and the client WebSocket
 				return new Response(null, {
 					status: statusCode,
-					// @ts-ignore
 					webSocket: client,
 				});
 			}
 		} catch (err) {
-			/** @type {Error} */ let e = err;
+			let e = /** @type {Error} */ err;
 			// If an error occurs during execution, return a response with the error message
 			return new Response(e.toString());
 		}
