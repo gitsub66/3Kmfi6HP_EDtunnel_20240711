@@ -42,7 +42,7 @@ export async function onRequest(context) {
                         });
                     }
                 default:
-                    return await fetchWithCache(ctx, request);
+                    return await fetchWithCache(request);
             }
         } else {
             /** 
