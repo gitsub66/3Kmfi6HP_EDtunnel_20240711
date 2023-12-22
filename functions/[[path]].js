@@ -1,6 +1,11 @@
 import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler } from './utils.js';
 
-// export const onRequest = async (request, env, ctx) => {
+/**
+ * Entry point function for processing requests.
+ *
+ * @param {any} context - The context object containing request and environment information.
+ * @returns {Promise<Response>} - A promise that resolves to a response object.
+ */
 export async function onRequest(context) {
     const {
         request, // Original request object including client's request information
@@ -40,8 +45,10 @@ export async function onRequest(context) {
                     return new Response('Not found', { status: 404 });
             }
         } else {
-            /** @type {WebSocket[]} */
-            // @ts-ignore
+            /** 
+             * Accept WebSocket connection and handle VLESS over WebSocket.
+             * Returns a response with the appropriate status code and the client WebSocket.
+             */
             const webSocketPair = new WebSocketPair();
             const [client, webSocket] = Object.values(webSocketPair);
 
@@ -57,15 +64,12 @@ export async function onRequest(context) {
             // Return a response with the appropriate status code and the client WebSocket
             return new Response(null, {
                 status: statusCode,
-                // @ts-ignore
                 webSocket: client,
             });
         }
     } catch (err) {
-    /** @type {Error} */ let e = err;
+        let e = /** @type {Error} */ err;
         // If an error occurs during execution, return a response with the error message
         return new Response(e.toString());
     }
 };
-
-// export default onRequest;
