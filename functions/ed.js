@@ -1,9 +1,9 @@
-import { redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler } from './utils.js';
+import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler } from './utils.js';
 
 export const onRequest = async (request, env, ctx) => {
-    if (env.LOGPOST) {
-        redirectConsoleLog(env.LOGPOST, crypto.randomUUID());
-    }
+    // if (env.LOGPOST) {
+    //     redirectConsoleLog(env.LOGPOST, crypto.randomUUID());
+    // }
 
     try {
         setConfigFromEnv(env);
