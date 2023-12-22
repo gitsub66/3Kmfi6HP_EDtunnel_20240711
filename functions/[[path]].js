@@ -26,7 +26,7 @@ export async function onRequest(context) {
 
             // Handle different URL paths
             switch (url.pathname) {
-                case '/':
+                case '/cf':
                     // Return a response with the Cloudflare information in JSON format
                     return new Response(JSON.stringify(request.cf), { status: 200 });
                 case `/${globalConfig.userID}`:
@@ -41,8 +41,8 @@ export async function onRequest(context) {
                         });
                     }
                 default:
-                    // Return a "Not found" response for any other URL path
-                    return new Response('Not found', { status: 404 });
+                    // Return a "unauthorized" response for any other URL path
+                    return new Response('unauthorized', { status: 401 });
             }
         } else {
             /** 
