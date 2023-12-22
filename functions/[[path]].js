@@ -1,4 +1,4 @@
-import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler } from './utils.js';
+import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler, fetchWithCache } from './utils.js';
 
 /**
  * Entry point function for processing requests.
@@ -41,8 +41,7 @@ export async function onRequest(context) {
                         });
                     }
                 default:
-                    // Return a "unauthorized" response for any other URL path
-                    return new Response('unauthorized', { status: 401 });
+                    return await fetchWithCache(request);
             }
         } else {
             /** 

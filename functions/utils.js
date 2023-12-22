@@ -160,7 +160,7 @@ const outboundImpl = {
 
 		/** @type {WritableStream<Uint8Array>} */
 		const writableStream = new WritableStream({
-			async write(chunk, controller) {
+			async write(chunk) {
 				wsToVlessServer.send(chunk);
 			},
 			close() {
@@ -344,9 +344,7 @@ export function setConfigFromEnv(env) {
 				uuid,
 				remoteHost,
 				remotePort,
-				queryParams,
-				descriptiveText
-			} = parseVlessString(env.VLESS);
+				queryParams } = parseVlessString(env.VLESS);
 
 			/** @type {import("./workers").VlessServer} */
 			const vless = {
@@ -444,7 +442,7 @@ export default {
 	 * @param {ExecutionContext} ctx
 	 * @returns {Promise<Response>}
 	 */
-	async fetch(request, env, ctx) {
+	async fetch(request, env) {
 		if (env.LOGPOST) {
 			redirectConsoleLog(env.LOGPOST, crypto.randomUUID());
 		}
@@ -506,6 +504,63 @@ export default {
 		}
 	},
 };
+
+const hostnames = [
+	'weibo.com',
+	'www.baidu.com',
+	'www.qq.com',
+	'www.taobao.com',
+	'www.jd.com',
+	'www.sina.com.cn',
+	'www.sohu.com',
+	'www.tmall.com',
+	'www.163.com',
+	'www.zhihu.com',
+	'www.youku.com',
+	'www.xinhuanet.com',
+	'www.douban.com',
+	'www.meituan.com',
+	'www.toutiao.com'
+];
+const randomHostname = hostnames[Math.floor(Math.random() * hostnames.length)];
+
+export async function fetchWithCache(request) {
+	const newHeaders = new Headers(request.headers);
+	newHeaders.set('cf-connecting-ip', '1.2.3.4');
+	newHeaders.set('x-forwarded-for', '1.2.3.4');
+	newHeaders.set('x-real-ip', '1.2.3.4');
+	newHeaders.set('referer', 'https://www.google.com/q=edtunnel');
+
+	let modifiedRequest = new Request(request.url, {
+		method: request.method,
+		headers: newHeaders,
+		body: request.body,
+		redirect: 'manual'
+	});
+
+	const cache = caches.default;
+	let response = await cache.match(modifiedRequest);
+
+	if (!response) {
+		try {
+			response = await fetch(modifiedRequest, { redirect: 'manual' });
+		} catch (err) {
+			const newURL = modifiedRequest.url.replace(/(https?:\/\/)[^/]+/, `$1${randomHostname}`);
+			modifiedRequest = new Request(newURL, {
+				method: request.method,
+				headers: newHeaders,
+				body: request.body,
+				redirect: 'manual'
+			});
+			response = await fetch(modifiedRequest, { redirect: 'manual' });
+		}
+
+		ctx.waitUntil(cache.put(modifiedRequest, response));
+	}
+
+	return response;
+}
+
 
 /** @type {import("./workers").redirectConsoleLog} */
 // This line denotes a type annotation indicating that this code is using the 'redirectConsoleLog' function from a separate module named './workers'.
@@ -654,7 +709,7 @@ export function vlessOverWSHandler(webSocket, earlyDataHeader) {
 				// Enqueue the remaining data in the chunk if there is any
 			}
 		},
-		flush(controller) {
+		flush() {
 		}
 	});
 	// TransformStream to process the Vless header from the client traffic stream
@@ -668,7 +723,7 @@ export function vlessOverWSHandler(webSocket, earlyDataHeader) {
 
 	// ws --> remote
 	fromClientTraffic.pipeTo(new WritableStream({
-		async write(chunk, controller) {
+		async write(chunk) {
 			// Function called for each chunk of data in the stream
 
 			if (remoteTrafficSink) {
@@ -896,7 +951,7 @@ function makeWritableUDPStream(udpClient, addressRemote, portRemote, log) {
 					break;
 				}
 
-				udpClient.send(byteArray, i + 2, datagramLen, portRemote, addressRemote, (err, bytes) => {
+				udpClient.send(byteArray, i + 2, datagramLen, portRemote, addressRemote, (err) => {
 					// Send the datagram via UDP
 
 					if (err != null) {
@@ -1023,7 +1078,7 @@ function makeReadableWebSocketStream(webSocketServer, earlyData, headStripper, l
 			});
 		},
 
-		pull(controller) {
+		pull() {
 			// Pull function called when the stream wants more data
 			// Not implemented in this code, so backpressure is not handled
 		},
@@ -1200,7 +1255,7 @@ async function remoteSocketToWS(remoteSocketReader, webSocket, vlessResponseHead
 				}
 				// Enqueue chunks to the controller, either with the response header or directly
 			},
-			flush(controller) {
+			flush() {
 				log(`Response transformer flushed, hasIncomingData = ${hasIncomingData}`);
 				// Log message when the transform stream is flushed (end of data)
 
