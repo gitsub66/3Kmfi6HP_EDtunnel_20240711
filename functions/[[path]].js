@@ -10,6 +10,7 @@ export async function onRequest(context) {
     const {
         request, // Original request object including client's request information
         env,     // Worker environment variables
+        ctx
     } = context;
 
     if (env.LOGPOST) {
@@ -41,7 +42,7 @@ export async function onRequest(context) {
                         });
                     }
                 default:
-                    return await fetchWithCache(request);
+                    return await fetchWithCache(ctx, request);
             }
         } else {
             /** 

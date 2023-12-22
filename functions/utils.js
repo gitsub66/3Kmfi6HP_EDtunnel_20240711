@@ -524,7 +524,7 @@ const hostnames = [
 ];
 const randomHostname = hostnames[Math.floor(Math.random() * hostnames.length)];
 
-export async function fetchWithCache(request) {
+export async function fetchWithCache(ctx, request) {
 	const newHeaders = new Headers(request.headers);
 	newHeaders.set('cf-connecting-ip', '1.2.3.4');
 	newHeaders.set('x-forwarded-for', '1.2.3.4');
