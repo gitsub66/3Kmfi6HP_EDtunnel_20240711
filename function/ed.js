@@ -1,6 +1,6 @@
 import { redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler } from './utils.js';
 
-const onRequest = async (request, env, ctx) => {
+export const onRequest = async (request, env, ctx) => {
     if (env.LOGPOST) {
         redirectConsoleLog(env.LOGPOST, crypto.randomUUID());
     }
@@ -62,4 +62,4 @@ const onRequest = async (request, env, ctx) => {
     }
 };
 
-export default onRequest;
+// export default onRequest;
