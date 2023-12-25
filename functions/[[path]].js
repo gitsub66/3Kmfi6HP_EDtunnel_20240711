@@ -1,4 +1,5 @@
-import { globalConfig, redirectConsoleLog, setConfigFromEnv, getVLESSConfig, vlessOverWSHandler, cn_hostnames } from './utils.js';
+import { globalConfig, redirectConsoleLog, setConfigFromEnv, vlessOverWSHandler, cn_hostnames } from './utils.js';
+import { createVLESSSub, getVLESSConfig } from './html.js';
 
 /**
  * Entry point function for processing requests.
@@ -17,9 +18,8 @@ export async function onRequest(context) {
     }
 
     try {
-        setConfigFromEnv(env);
+        setConfigFromEnv(request, env);
         const upgradeHeader = request.headers.get('Upgrade');
-
         // Check if the request is not a WebSocket upgrade request
         if (!upgradeHeader || upgradeHeader !== 'websocket') {
             const url = new URL(request.url);
@@ -38,16 +38,24 @@ export async function onRequest(context) {
                     // Check if the request has a matching user-agent pattern
                     if (!userAgentRegex.test(request.headers.get('User-Agent'))) {
                         // Get VLESS config based on the Host header and return it as a response
-                        const vlessConfig = getVLESSConfig(request.headers.get('Host'));
+                        const vlessConfig = getVLESSConfig(globalConfig.userID, request.headers.get('Host'), env.PROXYIP || "cdn.xn--b6gac.eu.org");
                         return new Response(`${vlessConfig}`, {
                             status: 200,
                             headers: {
-                                "Content-Type": "text/plain;charset=utf-8",
+                                "Content-Type": "text/html;charset=utf-8",
                             }
                         });
                     }
                     // Return an error response with a forbidden status code
                     return new Response('Access Forbidden', { status: 403 });
+                case `/sub/${globalConfig.userID}`:
+                    const sub_pages = createVLESSSub(globalConfig.userID, request.headers.get('Host'), env.PROXYIP || "cdn.xn--b6gac.eu.org")
+                    return new Response(btoa(sub_pages), {
+                        status: 200,
+                        headers: {
+                            "Content-Type": "text/plain; charset=utf-8",
+                        }
+                    });
                 default:
                     const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
                     const newHeaders = new Headers(request.headers);

@@ -240,6 +240,8 @@ declare function setConfigFromEnv(env: {
 
 declare function getVLESSConfig(hostName?: string): string;
 
+declare function createVLESSSub(hostName?: string): string;
+
 /** 
  * If you use this file as an ES module, you call this function whenever your Websocket server accepts a new connection. 
  * @param webSocket The established websocket connection, must be an accepted.

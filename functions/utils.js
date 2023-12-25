@@ -383,13 +383,21 @@ export const cn_hostnames = [
 	'www.cntv.cn',              // CCTV - China Central Television official website
 	'www.secoo.com',            // Secoo - A Chinese luxury e-commerce platform
 ];
-
 /**
  * Sets the configuration from the environment variables.
  *
  * @param {Object} env - The environment variables object.
  */
-export function setConfigFromEnv(env) {
+export function setConfigFromEnv(request, env) {
+	// Parse the URL of the incoming request
+	const url = new URL(request.url);
+	const query = url.searchParams; // Get the query parameters from the URL
+
+	// Get the VLESS URL, Proxy IP and SOCKS5 from query parameters or environment variables
+	const vlessParam = decodeURIComponent(query.get('vless')) || env.VLESS;
+	const proxyIPParam = decodeURIComponent(query.get('proxyip')) || env.PROXYIP || "cdn.xn--b6gac.eu.org";
+	const socks5Param = decodeURIComponent(query.get('socks5')) || env.SOCKS5;
+
 	globalConfig.userID = env.UUID || globalConfig.userID;
 
 	globalConfig.outbounds = [
@@ -398,31 +406,61 @@ export function setConfigFromEnv(env) {
 		}
 	];
 
-	if (env.PROXYIP) {
+	if (proxyIPParam) {
 		/** @type {import("./workers").ForwardOutbound} */
 		const forward = {
 			protocol: "forward",
-			address: env.PROXYIP
+			address: proxyIPParam
 		};
-
-		if (env.PORTMAP) {
-			forward.portMap = JSON.parse(env.PORTMAP);
-		} else {
-			forward.portMap = {};
-		}
 
 		globalConfig['outbounds'].push(forward);
 	}
 
-	// Example: vless://uuid@domain.name:port?type=ws&security=tls
-	if (env.VLESS) {
+	if (socks5Param) {
 		try {
-			// Parse the Vless URL into its components
+			const {
+				username,
+				password,
+				hostname,
+				port,
+			} = socks5AddressParser(socks5Param);
+
+			/** @type {import("./workers").Socks5Server} */
+			const socks = {
+				"address": hostname,
+				"port": port
+			}
+
+			if (typeof username !== 'undefined' && typeof password !== 'undefined') {
+				socks.users = [
+					{
+						"user": username,
+						"pass": password
+					}
+				]
+			}
+
+			// Add the SOCKS5 server to the outbounds array
+			globalConfig['outbounds'].push({
+				protocol: "socks",
+				settings: {
+					"servers": [socks]
+				}
+			});
+		} catch (err) {
+			console.log(err.toString()); // Log and handle any parsing errors
+		}
+	}
+
+	if (vlessParam) {
+		try {
+			// Parse the VLESS URL into its components
 			const {
 				uuid,
 				remoteHost,
 				remotePort,
-				queryParams } = parseVlessString(env.VLESS);
+				queryParams
+			} = parseVlessString(vlessParam);
 
 			/** @type {import("./workers").VlessServer} */
 			const vless = {
@@ -468,43 +506,6 @@ export function setConfigFromEnv(env) {
 			};
 
 			globalConfig['outbounds'].push(vlessOutbound);
-		} catch (err) {
-			console.log(err.toString()); // Log and handle any parsing errors
-		}
-	}
-
-	// Parse SOCKS5 address in the format: user:pass@host:port or host:port
-	if (env.SOCKS5) {
-		try {
-			const {
-				username,
-				password,
-				hostname,
-				port,
-			} = socks5AddressParser(env.SOCKS5);
-
-			/** @type {import("./workers").Socks5Server} */
-			const socks = {
-				"address": hostname,
-				"port": port
-			}
-
-			if (typeof username !== 'undefined' && typeof password !== 'undefined') {
-				socks.users = [
-					{
-						"user": username,
-						"pass": password
-					}
-				]
-			}
-
-			// Add the SOCKS5 server to the outbounds array
-			globalConfig['outbounds'].push({
-				protocol: "socks",
-				settings: {
-					"servers": [socks]
-				}
-			});
 		} catch (err) {
 			console.log(err.toString()); // Log and handle any parsing errors
 		}
