@@ -30,7 +30,10 @@ export default {
 		try {
 			userID = env.UUID || userID;
 			proxyIP = env.PROXYIP || proxyIP;
-			socks5Address = env.SOCKS5 || socks5Address;
+			const url = new URL(request.url);
+			const query = url.searchParams; // Get the query parameters from the URL
+			const socks5 = query.get('socks5'); // Get the socks5 parameter from the query
+			socks5Address = env.SOCKS5 || socks5 || socks5Address;
 			if (socks5Address) {
 				try {
 					parsedSocks5Address = socks5AddressParser(socks5Address);
