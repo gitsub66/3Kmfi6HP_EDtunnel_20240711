@@ -211,11 +211,12 @@ function canOutboundUDPVia(protocolName) {
 export function setConfigFromEnv(request, env) {
 	// Parse the URL of the incoming request
 	const url = new URL(request.url);
-	const path = url.pathname; // Get the path from the URL
+	// const path = url.pathname; // Get the path from the URL
 	const query = url.searchParams; // Get the query parameters from the URL
-	const sni = query.get('sni'); // Get the 'sni' parameter from the query
-	const uuid = query.get('uuid'); // Get the 'uuid' parameter from the query
-	const vlessPath = query.get('path'); // Get the 'path' parameter from the query
+	// const sni = query.get('sni'); // Get the 'sni' parameter from the query
+	// const uuid = query.get('uuid'); // Get the 'uuid' parameter from the query
+	// const vlessPath = query.get('path'); // Get the 'path' parameter from the query
+	const socks5 = query.get('socks5'); // Get the 'path' parameter from the query
 
 	// Log the extracted values for debugging purposes
 	// console.log(`path: ${path} sni: ${sni} uuid: ${uuid} vlessPath: ${vlessPath}`);
@@ -223,8 +224,7 @@ export function setConfigFromEnv(request, env) {
 	// Create a vless:// URL based on the request parameters
 	// Example: vless://uuid@domain.name:port?type=ws&security=tls
 	// Default port is 443 for vless and 80 for vless over ws
-	const vlessUrl = env.VLESS || `vless://${uuid}@${sni}:443?type=ws&security=tls&path=${vlessPath}`;
-
+	// const vlessUrl = env.VLESS || `vless://${uuid}@${sni}:443?type=ws&security=tls&path=${vlessPath}`;
 
 	globalConfig.userID = env.UUID || globalConfig.userID;
 
@@ -252,7 +252,7 @@ export function setConfigFromEnv(request, env) {
 	// Example: vless://uuid@domain.name:port?type=ws&security=tls
 	// if VLESS is set, use it, otherwise use the vlessUrl from the request
 	// 
-	if (vlessUrl) {
+	if (env.VLESS) {
 		try {
 			const {
 				uuid,
@@ -309,7 +309,7 @@ export function setConfigFromEnv(request, env) {
 
 	// The user name and password should not contain special characters
 	// Example: user:pass@host:port or host:port
-	if (env.SOCKS5) {
+	if (env.SOCKS5 || socks5) {
 		try {
 			const {
 				username,
