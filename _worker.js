@@ -20,6 +20,20 @@ if (!isValidUUID(userID)) {
 	throw new Error('uuid is invalid');
 }
 
+const blockList = new Set([
+    '7mmtv.sx',
+    // Add more domains or use wildcards for pattern matching
+]);
+
+const extractHostname = (url) => {
+    try {
+        const hostname = new URL(url).hostname;
+        return hostname;
+    } catch (e) {
+        return null;
+    }
+};
+
 export default {
 	/**
 	 * @param {import("@cloudflare/workers-types").Request} request
@@ -39,6 +53,17 @@ export default {
 			}
 			const upgradeHeader = request.headers.get('Upgrade');
 			if (!upgradeHeader || upgradeHeader !== 'websocket') {
+				const requestedUrl = new URL(request.url);
+				const hostname = extractHostname(requestedUrl);
+		
+				if (hostname && blockList.has(hostname)) {
+					// Block access to the requested URL
+					return new Response(`Access to ${hostname} is blocked.`, {
+						status: 403, // Forbidden
+					});
+				}
+
+				
 				const url = new URL(request.url);
 				switch (url.pathname) {
 					case `/cf`: {
