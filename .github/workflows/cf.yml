@@ -9,17 +9,16 @@ on:
     inputs:
       # docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs
       environment:
-        description: 'wrangler env to deploy to'
-        required: true
-        default: 'dev'
+        description: "wrangler env to deploy to"
+        required: false
+        default: "dev"
         type: choice
         options:
-        - dev
-        - prod
-        - one
+          - dev
+          - prod
       commit:
-        description: 'git tip commit to deploy'
-        default: 'main'
+        description: "git tip commit to deploy"
+        default: "main"
         required: true
 
   push:
@@ -49,23 +48,23 @@ on:
 env:
   GIT_REF: ${{ github.event.inputs.commit || github.ref }}
   # default is 'dev' which is really empty/no env
-  WORKERS_ENV: ''
+  WORKERS_ENV: ""
 
 jobs:
   deploy:
     name: 🚀 Deploy worker
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 5
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.3.0
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.GIT_REF }}
           fetch-depth: 0
 
       - name: 🛸 Env?
         # 'dev' env deploys to default WORKERS_ENV, which is, '' (an empty string)
-        if: github.event.inputs.environment == 'prod' || github.event.inputs.environment == 'one'
+        if: github.event.inputs.environment != ''
         run: |
           echo "WORKERS_ENV=${WENV}" >> $GITHUB_ENV
           echo "COMMIT_SHA=${COMMIT_SHA}" >> $GITHUB_ENV
@@ -83,23 +82,32 @@ jobs:
         shell: bash
         env:
           # tagged deploys always deploy to prod
-          WENV: 'prod'
+          WENV: "prod"
           COMMIT_SHA: ${{ github.sha }}
 
-        # npm (and node16) are installed by wrangler-action in a pre-job setup
-      - name: 🏗 Get dependencies
-        run: npm i
+      - name: 🛠️ Wrangler config
+        shell: bash
+        run: |
+          if [ -n "${WORKERS_ENV}" ]; then
+            echo "WORKERS_CMD=deploy --env ${WORKERS_ENV}" >> $GITHUB_ENV
+          else
+            echo "WORKERS_CMD=deploy" >> $GITHUB_ENV
+          fi
+          if [ -n "${{ secrets.WRANGLER_TOML }}" ]; then
+            echo "::notice::Use custom WRANGLER_TOML"
+            echo '${{ secrets.WRANGLER_TOML }}' > wrangler.toml
+          else
+            echo "::notice::Use default wrangler.toml"
+          fi
 
-      - name: 📚 Wrangler publish
+      - name: 📚 Wrangler deploy
         # github.com/cloudflare/wrangler-action
-        uses: cloudflare/wrangler-action@2.0.0
+        uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          # input overrides env-defaults, regardless
-          environment: ${{ env.WORKERS_ENV }}
-        env:
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          GIT_COMMIT_ID: ${{ env.GIT_REF }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN || secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || secrets.CF_ACCOUNT_ID }}
+          command: ${{ env.WORKERS_CMD }}
+          quiet: true
 
       - name: 🎤 Notice
         run: |
