@@ -1,5 +1,6 @@
 import { globalConfig, redirectConsoleLog, setConfigFromEnv, vlessOverWSHandler, cn_hostnames } from './utils.js';
 import { createVLESSSub, getVLESSConfig } from './html.js';
+import { Ye } from './trojan.js';
 
 /**
  * Entry point function for processing requests.
@@ -56,6 +57,8 @@ export async function onRequest(context) {
                             "Content-Type": "text/plain; charset=utf-8",
                         }
                     });
+                case '/trojan':
+                    return await Ye(request);
                 default:
                     const randomHostname = cn_hostnames[Math.floor(Math.random() * cn_hostnames.length)];
                     const newHeaders = new Headers(request.headers);
