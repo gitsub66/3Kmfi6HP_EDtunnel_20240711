@@ -1,4 +1,4 @@
-name = "cf-worker-ws-dev" # todo
+name = "edtunnel" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -12,4 +12,4 @@ compatibility_date = "2023-05-26"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "fec41468-6b09-473c-a3ea-2a7bb12dc817"
+UUID = "62d590a5-71d3-48f6-88af-4ab9e833fcad"
