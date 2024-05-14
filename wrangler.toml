@@ -12,6 +12,7 @@ pattern = "shopee.co.id.ider.1lunatic1icepick.my.id"
 pattern = "cf.shopee.co.id.ider.1lunatic1icepick.my.id"
 [[routes]]
 pattern = "cvs-deo.shopeemobile.com.ider.1lunatic1icepick.my.id"
+custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
