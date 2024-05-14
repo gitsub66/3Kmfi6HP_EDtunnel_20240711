@@ -13,7 +13,6 @@ pattern = "cf.shopee.co.id.ider.1lunatic1icepick.my.id"
 [[routes]]
 pattern = "cvs-deo.shopeemobile.com.ider.1lunatic1icepick.my.id"
 
-
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
