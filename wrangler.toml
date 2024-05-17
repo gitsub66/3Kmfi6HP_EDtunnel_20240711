@@ -1,32 +1,32 @@
-name = "sgyzgi" # todo
+name = "sgali" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sgdo2.gyzeira.biz.id"
+pattern = "sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.sgdo2.gyzeira.biz.id"
+pattern = "cvs-deo.shopeemobile.com.sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
 pattern = "cf.shopee.co.id.sgdo2.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.co.id.sgdo2.gyzeira.biz.id"
+pattern = "cv.shopee.co.id.sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.sgdo2.gyzeira.biz.id"
+pattern = "cvs-deo.shopeemobile.com.sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.sgdo2.gyzeira.biz.id"
+pattern = "quiz.vidio.com.sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "dl-cvs.ggbluefox.com.sgdo2.gyzeira.biz.id"
+pattern = "dl-cvs.ggbluefox.com.sgali.gyzeira.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "img.email1.vidio.com.sgdo2.gyzeira.biz.id"
+pattern = "img.email1.vidio.com.sgali.gyzeira.biz.id"
 custom_domain = true
 
 [vars]
