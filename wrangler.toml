@@ -28,6 +28,9 @@ custom_domain = true
 [[routes]]
 pattern = "investors.spotify.com.id1.tingkehvpn.my.id"
 custom_domain = true
+[[routes]]
+pattern = "englishtest-stage-7.duolingo.com.id1.tingkehvpn.my.id"
+custom_domain = true
 
 
 [vars]
