@@ -6,7 +6,7 @@ main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
 pattern=
-"xlaxiata.co.id.xt.trudjan.my.id"
+"xlaxiata.com.xt.trudjan.my.id"
 custom-domain=true
 [[routes]]
 pattern=
