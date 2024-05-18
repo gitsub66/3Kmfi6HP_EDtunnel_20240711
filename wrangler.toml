@@ -16,9 +16,7 @@ custom_domain = true
 [[routes]]
 pattern = "cv.shopee.sgsgdo.gratisanvpn.biz.id
 custom_domain = true
-[[routes]]
-pattern = "cvs-deo.shopeemobile.com.sgdo.gratisanvpn.biz.id"
-custom_domain = true
+
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
