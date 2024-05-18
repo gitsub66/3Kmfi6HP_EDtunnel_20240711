@@ -1,11 +1,11 @@
-name = "ID1" # todo
+name = "SG1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "Id.escapology69.filegear-sg.me."
+pattern = "sg1.escapology69.filegear-sg.me."
 custom_domain = true
 [[routes]]
 pattern = "rankguide.ind.freefiremobile.com.escapology69.filegear-sg.me."
