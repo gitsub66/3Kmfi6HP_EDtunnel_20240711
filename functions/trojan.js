@@ -136,7 +136,7 @@ async function parseTrojanHeader(buffer) {
     };
   }
   const password = new TextDecoder().decode(buffer.slice(0, crLfIndex));
-  if (password !== sha224(Password)) {
+  if (password !== sha224.sha224(Password)) {
     return {
       hasError: true,
       message: "invalid password"
