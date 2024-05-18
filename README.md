@@ -1,5 +1,15 @@
 # EDtunnel
 
+## Trojan Project Noted（必须设置）
+
+| Environment Variable | Description              |
+| -------------------- | ------------------------ |
+| PASSWORD             | Description for PASSWORD |
+| PROXYIP              | Description for PROXYIP  |
+
+Features: No need to set sha224, set password directly
+特点：无需设置 sha224，直接设置密码
+
 <p align="center">
   <img src="https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky" alt="edgetunnel" style="margin-bottom: -50px;">
 </p>
