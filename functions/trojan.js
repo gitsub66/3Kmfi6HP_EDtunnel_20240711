@@ -10,7 +10,6 @@
 
 // SHA-224
 // var sha224 = require('js-sha256').sha224;
-
 import { sha224 } from './sha224.js';
 
 // export default {
