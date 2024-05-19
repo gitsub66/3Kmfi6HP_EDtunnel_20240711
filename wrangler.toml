@@ -7,6 +7,21 @@ compatibility_date = "2023-05-26"
 [[routes]]
 pattern = "id1.indoliar.filegear-sg.me"
 custom_domain = true
+[[routes]]
+pattern = "104.18.24.139.id1.indoliar.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "104.18.25.139.id1.indoliar.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "104.18.2.2.id1.indoliar.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "104.18.3.2.id1.indoliar.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "gw.ruangguru.com.id1.indoliar.filegear-sg.me"
+custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
