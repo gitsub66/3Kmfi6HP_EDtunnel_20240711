@@ -1,11 +1,11 @@
-name = "sg1" # todo
+name = "sg-linode-indoliar" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg1.abscell.filegear-sg.me"
+pattern = "sg1.indoliar.filegear-sg.me"
 custom_domain = true
 
 [vars]
@@ -15,4 +15,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "babe3dc8-3bf2-45c2-87a9-2e4d9bb54ba5"
+UUID = "2a702a47-61e3-47e4-abdc-15d6a811ecfb"
