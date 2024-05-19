@@ -1,10 +1,25 @@
-name = "cf-worker-ws-dev" # todo
+name = "doomv" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 
+[[routes]]
+pattern = "Doomvpn.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.ph.Doomvpn.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.ph.Doomvpn.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.ph.Doomvpn.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "cf.shopee.ph.Doomvpn.filegear-sg.me"
+custom_domain = true
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
@@ -12,4 +27,4 @@ compatibility_date = "2023-05-26"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "5a1fa01f-db78-4dff-9c94-132a5f497fb3"
+UUID = "26e5a8f7-a84c-4f3f-a947-253b5a8d4feb"
