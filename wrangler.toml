@@ -11,7 +11,7 @@ custom_domain = true
 pattern = "shopee.co.id.indo.dandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.indomdandvpn.filegear-sg.me"
+pattern = "cf.shopee.co.id.indo.dandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "cv.shopee.sg.indo.dandvpn.filegear-sg.me"
