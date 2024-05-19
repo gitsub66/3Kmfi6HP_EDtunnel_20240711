@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "dandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "shopee.co.id.dandvpn.filegear-sg.me"
+pattern = "shopee.co.id.indo.dandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.dandvpn.filegear-sg.me"
+pattern = "cf.shopee.co.id.indomdandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.sg.dandvpn.filegear-sg.me"
+pattern = "cv.shopee.sg.indo.dandvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.dandvpn.filegear-sg.me"
+pattern = "cvs-deo.shopeemobile.indo.dandvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
