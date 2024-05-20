@@ -1,30 +1,30 @@
-name = "xt" # todo
+name = "xcp" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern=
-"xlaxiata.com.xt.trudjan.my.id"
-custom-domain=true
+pattern =
+"cf.shopee.sg.xt.trudjan.my.id"
+custom-domain = true
 [[routes]]
-pattern=
-"xlaxiata.co.id.xt.trudjan.my.id"
-custom-domain=true
+pattern =
+"cf.shopee.sg.xt.trudjan.my.id"
+custom-domain = true
 [[routes]]
-pattern=
-"xlaxiata.co.id.xt.trudjan.my.id"
-custom-domain=true
+pattern =
+"cf.shopee.sg.xt.trudjan.my.id"
+custom-domain = true
 [[routes]]
-pattern=
-"xlaxiata.co.id.xt.trudjan.my.id"
+pattern =
+"cf.shopee.sg.xt.trudjan.my.id"
 custom-domain=true
 [vars]
-# UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
+# UUID = "5bcaa1ac-83c2-4a26-8f38-88763e963a73"
 # PROXYIP = "1.2.3.4"
 # DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
-# NODE_ID = "1"
-# API_TOKEN = "example_dev_token"
+# NODE_ID = "acce5975026d5b8c124948593e17bc07"
+# API_TOKEN = "y_uxvWvV2EP8qHs0od3qp1ZKRYIH1TmloQJuuTK3"
 # API_HOST = "api.v2board.com"
-UUID = "b97e81a3-4c6f-4370-8500-8b010e335307"
+UUID = "5bcaa1ac-83c2-4a26-8f38-88763e963a73"
