@@ -19,27 +19,6 @@ custom_domain = true
 [[routes]]
 pattern = "blog.webex.com.katum.filegear-sg.me"
 custom_domain = true
-[[routes]]
-pattern = "shopee.co.id.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "cf.shopee.co.id.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "cv.shopee.sg.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "cvs-deo.shopeemobile.com.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "quiz.staging.vidio.com.katum.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "quiz.staging.vidio.com.katum.filegear-sg.me"
-custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
