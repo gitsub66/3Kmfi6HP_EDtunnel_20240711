@@ -1,9 +1,16 @@
-name = "cf-worker-ws-dev" # todo
+name = "oraclesg" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
+[[routes]]
+pattern = "oraclesg.bagyogg.my.id"
+custom_domain = true
+[[routes]]
+pattern = "shopee.co.id.oraclesg.bagyogg.my.id"
+custom_domain = true
+
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
@@ -13,3 +20,4 @@ compatibility_date = "2023-05-26"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
 UUID = "1b6c1745-992e-4aac-8685-266c090e50ea"
+PROXYIP = "138.2.99.97"
