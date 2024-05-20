@@ -5,7 +5,7 @@ name = "idtrojan" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idtrojan.cllo.my.id"
+pattern = "idtrojan.bagyogg.my.id"
 custom_domain = true
 
 
