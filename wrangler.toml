@@ -14,10 +14,10 @@ custom_domain = true
 pattern = "perkosa.bela.my.id.gcp.noyszvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "gomarketplacefront-cf.zoom.us.gcp.noyszvpn.filegear-sg.me"
+pattern = "api-staging2.test.mitra.shopee.co.id.gcp.noyszvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.gcp.noyszvpn.filegear-sg.me"
+pattern = "cvs-deo.shopeemobile.com.gcp.noyszvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
