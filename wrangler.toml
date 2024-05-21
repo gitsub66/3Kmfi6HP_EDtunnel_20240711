@@ -1,17 +1,17 @@
-name = "indo" # todo
+name = "sgdo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "indo.abscelluler.my.id"
+pattern = "sgdo.abscelluler.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.indo.abscelluler.my.id"
+pattern = "gw.ruangguru.com.sgdo.abscelluler.my.id"
 custom_domain = true
 [[routes]]
-pattern = "104.18.2.2.indo.abscelluler.my.id"
+pattern = "104.18.2.2.sgdo.abscelluler.my.id"
 custom_domain = true
 
 [vars]
