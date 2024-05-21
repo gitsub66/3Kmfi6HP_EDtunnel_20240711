@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 let configRemarks = "NOYSZ-VLESS"
 
-const พร็อกซีไอพีs = ['8.222.164.209'];
+const พร็อกซีไอพีs = ['138.2.99.97'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
