@@ -8,7 +8,7 @@ compatibility_date = "2023-05-26"
 pattern = "support.duolingo.com.kozelvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support .com.kozelvpn.filegear-sg.me"
+pattern = "support.dulingo.com.kozelvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
