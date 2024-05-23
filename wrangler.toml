@@ -11,15 +11,28 @@ custom_domain = true
 pattern = "shopee.co.id.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.indo.bjhonnstore.filegear-sg.me"
+pattern = "www.ruangguru.com.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.sg.indo.bjhonnstore.filegear-sg.me"
+pattern = "gomarketplacefront-cf.zoom.us.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.indo.bjhonnstore.filegear-sg.me"
+pattern = "englishtest-stage-7.duolingo.com.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
-
+pattern = "blog.sushiroll.co.id.indo.bjhonnstore.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "acces.iflix.com.indo.bjhonnstore.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "104.22.25.131.indo.bjhonnstore.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "ruangguru.com.indo.bjhonnstore.filegear-sg.me"
+custom_domain = true
+[[routes]]
+pattern = "104.26.7.171.indo.bjhonnstore.filegear-sg.me"
+custom_domain = true
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
