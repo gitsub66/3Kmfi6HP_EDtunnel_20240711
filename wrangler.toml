@@ -17,8 +17,6 @@ custom_domain = true
 pattern = "gomarketplacefront-cf.zoom.us.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.indo.bjhonnstore.filegear-sg.me"
-custom_domain = true
 pattern = "blog.sushiroll.co.id.indo.bjhonnstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
