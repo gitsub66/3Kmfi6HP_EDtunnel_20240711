@@ -5,10 +5,10 @@ name = "indo" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "support.duolingo.com.kozelvpn.filegear-sg.me"
+pattern = "englishtest-stage-7.duolingo.com.kozelvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.dulingo.com.kozelvpn.filegear-sg.me"
+pattern = "englishtest-stage-7.duolingo.com.kozelvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
