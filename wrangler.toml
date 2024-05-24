@@ -1,17 +1,17 @@
-name = "sgovh" # todo
+name = "vultr" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "ovh.reinzvpn.filegear-sg.me"
+pattern = "vultr.reinzvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "teams.microsoft.com.ovh.reinzvpn.filegear-sg.me"
+pattern = "teams.microsoft.com.vultr.reinzvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "meetings.googleapis.com.ovh.reinzvpn.filegear-sg.me"
+pattern = "meetings.googleapis.com.vultr.reinzvpn.filegear-sg.me"
 custom_domain = true
 
 
