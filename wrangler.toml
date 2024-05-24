@@ -1,23 +1,23 @@
-name = "vpn" # todo
+name = "zel" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "vpn.kozelvpn.filegear-sg.me"
+pattern = "zel.kozelvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vpn.zellyvpn.filegear-sg.me"
+pattern = "support.duolingo.com.zel.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vpn.zellyvpn.filegear-sg.me"
+pattern = "support.duolingo.com.zel.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vpn.zellyvpn.filegear-sg.me"
+pattern = "support.duolingo.com.zel.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vpn.zellyvpn.filegear-sg.me"
+pattern = "support.duolingo.com.zel.zellyvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
