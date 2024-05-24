@@ -1,23 +1,23 @@
-name = "ID XCL" # todo
+name = "ID 99" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idxcl.1lunatic1icepick.my.id"
+pattern = "id99.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.idxcl.1lunatic1icepick.my.id"
+pattern = "graph.facebook.com.id99.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.idxcl.1lunatic1icepick.my.id"
+pattern = "ava.game.naver.com.id99.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "w5.web.whatsapp.com.idxcl.1lunatic1icepick.my.id"
+pattern = "v.whatsapp.net.id99.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "sogood.linefriends.com.idxcl.1lunatic1icepick.my.id"
+pattern = "sogood.linefriends.com.id99.1lunatic1icepick.my.id"
 custom_domain = true
 
 [vars]
