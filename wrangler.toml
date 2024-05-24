@@ -20,7 +20,7 @@ custom_domain = true
 pattern = "asphalt.gojek.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "idxcl.1lunatic1icepick.my.id"
+pattern = "tellafriendreceiver.whatsapp.net.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.idxcl.1lunatic1icepick.my.id"
