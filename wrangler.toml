@@ -1,23 +1,38 @@
-name = "ID 99" # todo
+name = "id99" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id99.1lunatic1icepick.my.id"
+pattern = "idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.id99.1lunatic1icepick.my.id"
+pattern = "media.fcgk35-1.fna.whatsapp.net.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id99.1lunatic1icepick.my.id"
+pattern = "graph.facebook.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "v.whatsapp.net.id99.1lunatic1icepick.my.id"
+pattern = "driver.gojek.link.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "sogood.linefriends.com.id99.1lunatic1icepick.my.id"
+pattern = "asphalt.gojek.com.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "tellafriendreceiver.whatsapp.net.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "w5.web.whatsapp.com.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "v.whatsapp.net.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "sogood.linefriends.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 
 [vars]
