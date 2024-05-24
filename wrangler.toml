@@ -8,13 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
-pattern = "media.fcgk35-1.fna.whatsapp.net.idxcl.1lunatic1icepick.my.id"
+pattern = "w5.web.whatsapp.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
 pattern = "graph.facebook.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 [[routes]]
 pattern = "driver.gojek.link.idxcl.1lunatic1icepick.my.id"
+custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.idxcl.1lunatic1icepick.my.id"
 custom_domain = true
 
 [vars]
