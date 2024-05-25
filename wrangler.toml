@@ -9,7 +9,6 @@ pattern = "oraqle.envy-cloud.me"
 custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.oraqle.envy-cloud.me"
-envy-cloud.me
 custom_domain = true
 [[routes]]
 pattern = "support.duolingo.com.oraqle.envy-cloud.me"
