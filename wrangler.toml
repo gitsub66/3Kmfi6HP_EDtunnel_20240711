@@ -5,19 +5,19 @@ name = "SG-AWS" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sgaws.crotjanda.filegear-sg.me"
+pattern = "sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sgaws.crotjanda.filegear-sg.me"
+pattern = "ava.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.sgaws.crotjanda.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.sgaws.crotjanda.filegear-sg.me"
+pattern = "df.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "go.line-works.com.sgaws.crotjanda.filegear-sg.me"
+pattern = "go.line-works.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 
 [vars]
@@ -27,4 +27,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "bf977d92-1dd2-4c2f-a442-9f6c5a032a48"
+UUID = "4347f885-7215-4f18-8e25-24b65bf1df8c"
