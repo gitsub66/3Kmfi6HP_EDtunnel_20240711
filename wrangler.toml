@@ -5,19 +5,19 @@ name = "id-xcp" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id1.ayubisanz.filegear-sg.me"
+pattern = "sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id1.ayubisanz.filegear-sg.me"
+pattern = "ava.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.id1.ayubisanz.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.id1.ayubisanz.filegear-sg.me"
+pattern = "df.game.naver.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "go.line-works.com.id1.ayubisanz.filegear-sg.me"
+pattern = "go.line-works.com.sgaws.ayubisanz.filegear-sg.me"
 custom_domain = true
 
 [vars]
