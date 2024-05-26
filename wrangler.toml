@@ -1,4 +1,4 @@
-name = "SG-AWS" # todo
+name = "SGAWS" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -27,4 +27,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "9cf69011-ce48-4f3a-b0a7-08c35cec331d"
+UUID = "eaa2d97f-b436-49e5-a422-8e6440cdea30"
