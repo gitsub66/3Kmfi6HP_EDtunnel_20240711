@@ -1,23 +1,23 @@
-name = "sg-amazon" # todo
+name = "sg-oracle" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "amazon.ayubisanz.filegear-sg.me"
+pattern = "oracle.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.amazon.ayubisanz.filegear-sg.me"
+pattern = "df.game.naver.com.oracle.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.amazon.ayubisanz.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.oracle.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "slugger.hangame.com.amazon.ayubisanz.filegear-sg.me"
+pattern = "slugger.hangame.com.oracle.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.amazon.ayubisanz.filegear-sg.me"
+pattern = "ava.game.naver.com.oracle.ayubisanz.filegear-sg.me"
 custom_domain = true
 
 [vars]
