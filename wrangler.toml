@@ -8,6 +8,12 @@ compatibility_date = "2023-05-26"
 pattern = "sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
+pattern = "cms.ruangguru.com.sg1.abscell.my.id"
+custom_domain = true
+[[routes]]
+pattern = "gw.ruangguru.com.sg1.abscell.my.id"
+custom_domain = true
+[[routes]]
 pattern = "ava.game.naver.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
