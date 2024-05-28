@@ -1,14 +1,17 @@
-name = "xcl" # todo
+name = "tesaja" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "xcl.wonghd.my.id"
+pattern = "tesaja.wonghd.my.id"
 custom_domain = true
 [[routes]]
-pattern = "v.whatsapp.net.xcl.wonghd.my.id"
+pattern = "v.whatsapp.net.tesaja.wonghd.my.id"
+custom_domain = true
+[[routes]]
+pattern = "wong.whatsapp.com.tesaja.wonghd.my.id"
 custom_domain = true
 
 [vars]
@@ -18,4 +21,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "53868f68-3ffd-4c6b-84b5-4f6827b248fe"
+UUID = "ac607328-d928-4170-9483-1bc8b3b7c1aa"
