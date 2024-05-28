@@ -5,28 +5,28 @@ name = "sg-vultr-abscell" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg3.abscell.my.id"
+pattern = "sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.sg3.abscell.my.id"
+pattern = "cms.ruangguru.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.sg3.abscell.my.id"
+pattern = "gw.ruangguru.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sg3.abscell.my.id"
+pattern = "ava.game.naver.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.sg3.abscell.my.id"
+pattern = "df.game.naver.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "account.pmang.game.naver.com.sg3.abscell.my.id"
+pattern = "account.pmang.game.naver.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.sg3.abscell.my.id"
+pattern = "care.pmang.game.naver.com.sg4.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "app-stg.gopay.co.id.sg3.abscell.my.id"
+pattern = "app-stg.gopay.co.id.sg4.abscell.my.id"
 custom_domain = true
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
