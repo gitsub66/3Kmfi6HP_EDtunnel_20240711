@@ -1,32 +1,32 @@
-name = "id-ikd-abscell" # todo
+name = "sgamazon-abscell" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id1.abscell.my.id"
+pattern = "sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.id1.abscell.my.id"
+pattern = "cms.ruangguru.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.id1.abscell.my.id"
+pattern = "gw.ruangguru.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id1.abscell.my.id"
+pattern = "ava.game.naver.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.id1.abscell.my.id"
+pattern = "df.game.naver.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "account.pmang.game.naver.com.id1.abscell.my.id"
+pattern = "account.pmang.game.naver.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.id1.abscell.my.id"
+pattern = "care.pmang.game.naver.com.sgamazon.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "app-stg.gopay.co.id.id1.abscell.my.id"
+pattern = "app-stg.gopay.co.id.sgamazon.abscell.my.id"
 custom_domain = true
 
 [vars]
