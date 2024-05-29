@@ -1,23 +1,32 @@
-name = "vidio" # todo
+name = "sg1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "vidio.lbjstore.my.id"
+pattern = "sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.vidio.lbjstore.my.id"
+pattern = "quiz.vidio.com.sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.vidio.lbjstore.my.id"
+pattern = "quiz.int.vidio.com.sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "img.email3.vidio.com.vidio.lbjstore.my.id"
+pattern = "img.email3.vidio.com.sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "nontontv.vidio.com.vidio.lbjstore.my.id"
+pattern = "nontontv.vidio.com.sg1.lbjstore.my.id"
+custom_domain = true
+[[routes]]
+pattern = "www.udemy.com.sg1.lbjstore.my.id"
+custom_domain = true
+[[routes]]
+pattern = "www.skillacademy.com.sg1.lbjstore.my.id"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.sg1.lbjstore.my.id"
 custom_domain = true
 
 [vars]
