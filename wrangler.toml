@@ -8,16 +8,13 @@ compatibility_date = "2023-05-26"
 pattern = "sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "shopee.co.id.sg1.lbjstore.my.id"
+pattern = "quiz.vidio.com.sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.sg1.lbjstore.my.id"
+pattern = "quiz.int.vidio.com.sg1.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.sg.sg1.lbjstore.my.id"
-custom_domain = true
-[[routes]]
-pattern = "cvs-deo.shopeemobile.com.sg1.lbjstore.my.id"
+pattern = "blog.webex.com.sg1.lbjstore.my.id"
 custom_domain = true
 
 [vars]
