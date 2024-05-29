@@ -8,13 +8,13 @@ compatibility_date = "2023-05-26"
 pattern = "indo.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.indo.sant.my.id"
+pattern = "trunkstable.instagram.com.indo.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.indo.sant.my.id"
+pattern = "graph.instagram.com.indo.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.indo.sant.my.id"
+pattern = "z-p15.www.instagram.com.indo.sant.my.id"
 custom_domain = true
 [[routes]]
 pattern = "api.instagram.com.indo.sant.my.id"
