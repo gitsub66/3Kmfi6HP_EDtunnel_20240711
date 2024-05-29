@@ -1,20 +1,20 @@
-name = "sg1" # todo
+name = "sg2" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg1.lbjstore.my.id"
+pattern = "sg2.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.sg1.lbjstore.my.id"
+pattern = "quiz.vidio.com.sg2.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.sg1.lbjstore.my.id"
+pattern = "quiz.int.vidio.com.sg2.lbjstore.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.sg1.lbjstore.my.id"
+pattern = "blog.webex.com.sg2.lbjstore.my.id"
 custom_domain = true
 
 [vars]
