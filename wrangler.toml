@@ -1,44 +1,44 @@
-name = "aws" # todo
+name = "aws1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "aws.fourfect.filegear-sg.me"
+pattern = "aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.aws.fourfect.filegear-sg.me"
+pattern = "cache.netflix.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.aws.fourfect.filegear-sg.me"
+pattern = "api.instagram.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "m.pubgmobile.com.aws.fourfect.filegear-sg.me"
+pattern = "m.pubgmobile.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.aws.fourfect.filegear-sg.me"
+pattern = "help.viu.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "static-web.prod.vidiocdn.com.aws.fourfect.filegear-sg.me"
+pattern = "static-web.prod.vidiocdn.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.aws.fourfect.filegear-sg.me"
+pattern = "cf.shopee.co.id.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.aws.fourfect.filegear-sg.me"
+pattern = "investors.spotify.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.aws.fourfect.filegear-sg.me"
+pattern = "ava.game.naver.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "app.genflix.co.id.aws.fourfect.filegear-sg.me"
+pattern = "app.genflix.co.id.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "asphalt.go-jek.com.aws.fourfect.filegear-sg.me"
+pattern = "asphalt.go-jek.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "teams.live.com.aws.fourfect.filegear-sg.me"
+pattern = "teams.live.com.aws1.fourfect.filegear-sg.me"
 custom_domain = true
 
 [vars]
