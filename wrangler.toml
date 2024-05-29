@@ -8,7 +8,7 @@ compatibility_date = "2023-05-26"
 pattern = "ali.wonghd.my.id"
 custom_domain = true
 [[routes]]
-pattern = "web.web.whatsapp.com.ali.wonghd.my.id"
+pattern = "web.v.whatsapp.com.ali.wonghd.my.id"
 custom_domain = true
 [[routes]]
 pattern = "v.wong.whatsapp.net.ali.wonghd.my.id"
