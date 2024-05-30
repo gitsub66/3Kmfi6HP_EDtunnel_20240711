@@ -1,44 +1,44 @@
-name = "amz1" # todo
+name = "amz2" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "amz1.noyszid.filegear-sg.me"
+pattern = "amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.amz1.noyszid.filegear-sg.me"
+pattern = "cache.netflix.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.amz1.noyszid.filegear-sg.me"
+pattern = "api.instagram.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "m.pubgmobile.com.amz1.noyszid.filegear-sg.me"
+pattern = "m.pubgmobile.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.amz1.noyszid.filegear-sg.me"
+pattern = "help.viu.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "static-web.prod.vidiocdn.com.amz1.noyszid.filegear-sg.me"
+pattern = "static-web.prod.vidiocdn.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.amz1.noyszid.filegear-sg.me"
+pattern = "cf.shopee.co.id.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.amz1.noyszid.filegear-sg.me"
+pattern = "investors.spotify.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.amz1.noyszid.filegear-sg.me"
+pattern = "ava.game.naver.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "app.genflix.co.id.amz1.noyszid.filegear-sg.me"
+pattern = "app.genflix.co.id.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.amz1.noyszid.filegear-sg.me"
+pattern = "df.game.naver.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "teams.live.com.amz1.noyszid.filegear-sg.me"
+pattern = "teams.live.com.amz2.noyszid.filegear-sg.me"
 custom_domain = true
 
 [vars]
