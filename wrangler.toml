@@ -1,23 +1,20 @@
-name = "idgcp" # todo
+name = "sgamaxon" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id.gyzstore.filegear-sg.me"
+pattern = "sg1.gyzstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.ph.id.gyzstore.filegear-sg.me"
+pattern = "ava.game.naver.com.sg1.gyzstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.id.gyzstore.filegear-sg.me"
+pattern = "df.game.naver.com.sg1.gyzstore.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.co.id.id.gyzstore.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "poe.garena.com.id.gyzstore.filegear-sg.me"
+pattern = "go2.webtoons.com.sg1.gyzstore.filegear-sg.me"
 custom_domain = true
 
 [vars]
