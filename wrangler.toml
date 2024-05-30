@@ -20,7 +20,7 @@ custom_domain = true
 pattern = "help.viu.com.aws2.bjhonvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "static-web.prod.vidiocdn.com.aws2.bjhonvpn.filegear-sg
+pattern = "static-web.prod.vidiocdn.com.aws2.bjhonvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "cf.shopee.co.id.aws2.bjhonvpn.filegear-sg.me"
