@@ -35,7 +35,7 @@ custom_domain = true
 pattern = "app.genflix.co.id.aws2.bjhonvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "asphalt.go-jek.com.aws2.bjonvpn.filegear-sg.me"
+pattern = "df.game.naver.com.aws2.bjonvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "teams.live.com.aws2.bjhonvpn.filegear-sg.me"
