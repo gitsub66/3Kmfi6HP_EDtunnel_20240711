@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "diptyque.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "shopee.co.id.diptyque.fadzvpnid.filegear-sg.me"
+pattern = "ava.game.naver.com.diptyque.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.diptyque.fadzvpnid.filegear-sg.me"
+pattern = "naver.com.diptyque.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.sg.diptyque.fadzvpnid.filegear-sg.me"
+pattern = "line.naver.jp.diptyque.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.diptyque.fadzvpnid.filegear-sg.me"
+pattern = "m.spolive.game.pmang.com.diptyque.fadzvpnid.filegear-sg.me"
 custom_domain = true
 
 [vars]
