@@ -5,44 +5,20 @@ name = "serversg" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "support.zoom.us.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "beta.zoom.us.serversg.fadzvpnid.filegear-sg.me"
+pattern = "serversg.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "englishtest-stage-7.duolingo.com.serversg.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "104.18.17.230.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "support.duolingo.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-pattern = "quiz.int.vidio.com.serversg.fadzvpnid.filegear-sg.me"
+pattern = "Ava.game.naver.com.serversg.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "quiz.staging.vidio.com.serversg.fadzvpnid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "Ava.game.naver.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-pattern = "Df.game.naver.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-[[routes]]
 pattern = "investor.fb.com.serversg.fadzvpnid.filegear-sg.me"
 custom_domain = true
-[[routes]]
-pattern = "cdn.appsflyer.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "www.pubgmobile.com.serversg.fadzvpnid.filegear-sg.me"
-custom_domain = true
-
-
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
