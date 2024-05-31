@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "sg-loyang.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.sg-loyang.sant.my.id"
+pattern = "zaintest.vuclip.com.sg-loyang.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.sg-loyang.sant.my.id"
+pattern = "zaintest.vuclip.com.sg-loyang.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.sg-loyang.sant.my.id"
+pattern = "zaintest.vuclip.com.sg-loyang.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "help.viu.com.sg-loyang.sant.my.id"
+pattern = "zaintest.vuclip.com.sg-loyang.sant.my.id"
 custom_domain = true
 
 [vars]
