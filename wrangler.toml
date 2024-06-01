@@ -1,4 +1,4 @@
-name = "vless" # todo
+name = "toto" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -8,17 +8,12 @@ compatibility_date = "2023-05-26"
 pattern = "vlesstehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
-pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
+pattern = "support.duolingo.com.toto.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
+pattern = "englishtest-stage-7.duolingo.com.toto.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
-custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
