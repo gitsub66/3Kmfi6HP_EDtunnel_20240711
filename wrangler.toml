@@ -11,7 +11,7 @@ custom_domain = true
 pattern = "support.duolingo.com.toto.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.toto.tehekvpn.filegear-sg.me"
+pattern = "support.duolingo.com.toto.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 
