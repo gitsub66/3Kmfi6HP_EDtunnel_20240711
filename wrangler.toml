@@ -1,23 +1,23 @@
-name = "indo2" # todo
+name = "sgdo666" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "fly.envy-cloud.me"
+pattern = "sgdo.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.fly.envy-cloud.me"
+pattern = "ava.game.naver.com.sgdo.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.fly.envy-cloud.me"
+pattern = "support.duolingo.com.sgdo.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "error.growmotion.com.fly.envy-cloud.me"
+pattern = "error.growmotion.com.sgdo.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "paylater-docs.akulaku.com.fly.envy-cloud.me"
+pattern = "paylater-docs.akulaku.com.sgdo.vpn-cakill.biz.id"
 custom_domain = true
 
 [vars]
