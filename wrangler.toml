@@ -13,7 +13,6 @@ custom_domain = true
 [[routes]]
 pattern = "support.duolingo.com.toto.tehekvpn.filegear-sg.me"
 custom_domain = true
-[[routes]]
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
