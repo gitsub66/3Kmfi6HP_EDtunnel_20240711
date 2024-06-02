@@ -1,23 +1,23 @@
-name = "id-google" # todo
+name = "ind" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id-google.sant.my.id"
+pattern = "ind.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.id-google.sant.my.id"
+pattern = "df.game.naver.com.ind.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id-google.sant.my.id"
+pattern = "ava.game.naver.com.ind.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.id-google.sant.my.id"
+pattern = "quiz.staging.vidio.com.ind.sant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.id-google.sant.my.id"
+pattern = "graph.instagram.com.ind.sant.my.id"
 custom_domain = true
 
 [vars]
