@@ -1,23 +1,23 @@
-name = "SG-Oracle" # todo
+name = "SG-Contabo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "oracle.ayubisanz.filegear-sg.me"
+pattern = "contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.oracle.ayubisanz.filegear-sg.me"
+pattern = "df.game.naver.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.oracle.ayubisanz.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "www.spolive.game.pmang.com.com.oracle.ayubisanz.filegear-sg.me"
+pattern = "www.spolive.game.pmang.com.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.oracle.ayubisanz.filegear-sg.me"
+pattern = "ava.game.naver.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 
 [vars]
