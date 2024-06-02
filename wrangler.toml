@@ -5,7 +5,7 @@ name = "toto" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "vlesstehekvpn.filegear-sg.me"
+pattern = "toto.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
 pattern = "support.duolingo.com.toto.tehekvpn.filegear-sg.me"
