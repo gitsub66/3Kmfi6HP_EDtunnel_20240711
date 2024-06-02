@@ -14,7 +14,7 @@ custom_domain = true
 pattern = "care.pmang.game.naver.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "www.spolive.game.pmang.com.com.contabo.ayubisanz.filegear-sg.me"
+pattern = "publog.pmang.com.contabo.ayubisanz.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.contabo.ayubisanz.filegear-sg.me"
