@@ -5,7 +5,7 @@ name = "vless" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "tolo.tehekvpn.filegear-sg.me"
+pattern = "vless.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
 pattern = "englishtest-stage-7.duolingo.com.vless.tehekvpn.filegear-sg.me"
