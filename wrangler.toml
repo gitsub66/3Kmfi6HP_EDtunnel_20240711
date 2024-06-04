@@ -8,10 +8,10 @@ compatibility_date = "2023-05-26"
 pattern = "vless.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
-pattern = "englishtest-stage-7.duolingo.com.vless.tehekvpn.filegear-sg.me"
+pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.vless.tehekvpn.filegear-sg.me"
+pattern = "support.duolingo.com.vless.tehekvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
