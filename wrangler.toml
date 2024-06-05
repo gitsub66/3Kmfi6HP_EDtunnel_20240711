@@ -1,17 +1,17 @@
-name = "vless" # todo
+name = "plok" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "vless.tehekvpn.filegear-sg.me"
+pattern = "plok.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
-pattern = "blog.webex.com.vless.tehekvpn.filegear-sg.me"
+pattern = "blog.webex.com.plok.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.vless.tehekvpn.filegear-sg.me"
+pattern = "blog.webex.com.plok.tehekvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
