@@ -1,32 +1,32 @@
-name = "chk" # todo
+name = "baxetus" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "chk.hashoino.filegear-sg.me"
+pattern = "bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "teams.microsoft.com.chk.hashoino.filegear-sg.me"
+pattern = "teams.microsoft.com.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "meetings.googleapis.com.chk.hashoino.filegear-sg.me"
+pattern = "meetings.googleapis.com.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "edu.ruangguru.com.chk.hashoino.filegear-sg.me"
+pattern = "edu.ruangguru.com.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "beta.zoom.us.chk.hashoino.filegear-sg.me"
+pattern = "beta.zoom.us.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.zoom.us.chk.hashoino.filegear-sg.me"
+pattern = "api.zoom.us.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "store.zoom.us.chk.hashoino.filegear-sg.me"
+pattern = "store.zoom.us.bus.hashoino.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.chk.hashoino.filegear-sg.me"
+pattern = "support.zoom.us.bus.hashoino.filegear-sg.me"
 custom_domain = true
 
 
