@@ -8,7 +8,7 @@ compatibility_date = "2023-05-26"
 pattern = "indo.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routers]]
-pattern = "blog.webex.com.indo.tehekvpn.filegear-sg.me"
+pattern = "support.duolingo.com.indo.tehekvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "api.webex.com.indo.tehekvpn.filegear-sg.me"
