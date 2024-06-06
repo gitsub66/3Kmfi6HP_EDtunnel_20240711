@@ -1,23 +1,23 @@
-name = "usdo" # todo
+name = "onegai" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "usdo.fadzvpnid.filegear-sg.me"
+pattern = "onegai.fadztunnell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.usdo.fadzvpnid.filegear-sg.me"
+pattern = "ava.game.naver.com.onegai.fadztunnell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "Graph.facebook.com.usdo.fadzvpnid.filegear-sg.me"
+pattern = "blog.sushiroll.co.id.onegai.fadztunnell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.usdo.fadzvpnid.filegear-sg.me"
+pattern = "blog.webex.com.onegai.fadztunnell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.usdo.fadzvpnid.filegear-sg.me"
+pattern = "www.sushiroll.co.id.onegai.fadztunnell.my.id"
 custom_domain = true
 
 [vars]
