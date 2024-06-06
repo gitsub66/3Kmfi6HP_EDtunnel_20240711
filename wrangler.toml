@@ -1,23 +1,23 @@
-name = "free" # todo
+name = "indo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "free.x4official.filegear-sg.me"
+pattern = "indo.x4official.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.free.x4official.filegear-sg.me"
+pattern = "blog.webex.com.indo.x4official.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cf.shopee.co.id.free.x4official.filegear-sg.me"
+pattern = "cf.shopee.co.id.indo.x4official.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cv.shopee.sg.free.x4official.filegear-sg.me"
+pattern = "cv.shopee.indo.x4official.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.free.x4official.filegear-sg.me"
+pattern = "cvs-deo.shopeemobile.com.indo.x4official.filegear-sg.me"
 custom_domain = true
 
 [vars]
