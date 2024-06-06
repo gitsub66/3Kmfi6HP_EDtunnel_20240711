@@ -8,7 +8,7 @@ compatibility_date = "2023-05-26"
 pattern = "komeng.onlyranwal.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "englishtest-stage-7.duolingo.com.komeng.onlyranwal.filegear-sg.me"
+pattern = "blog.webex.com.komeng.onlyranwal.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "cf.shopee.co.id.komeng.onlyranwal.filegear-sg.me"
