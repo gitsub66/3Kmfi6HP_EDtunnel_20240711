@@ -1,32 +1,11 @@
-name = "baxetus" # todo
+name = "test" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "teams.microsoft.com.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "meetings.googleapis.com.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "edu.ruangguru.com.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "beta.zoom.us.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "api.zoom.us.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "store.zoom.us.bus.hashoino.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "support.zoom.us.bus.hashoino.filegear-sg.me"
+pattern = "test.hashoino.filegear-sg.me"
 custom_domain = true
 
 
