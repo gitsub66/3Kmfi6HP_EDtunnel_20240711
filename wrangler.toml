@@ -6,7 +6,7 @@ main = "_worker.js"
 compatibility_date = "2023-05-26"
 
 [[routes]]
-pattern = "id-gllc.ershavpn.filegear-sg.me"
+pattern = "fr-gllc.ershavpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "vidio.com.fr-gllc.ershavpn.filegear-sg.me"
