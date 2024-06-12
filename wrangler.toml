@@ -1,23 +1,23 @@
-name = "id-addxcl-gcp" # todo
+name = "sg-xcl-aws" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "add.crotjanda.filegear-sg.me"
+pattern = "awsxcl.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.add.crotjanda.filegear-sg.me"
+pattern = "df.game.naver.com.awsxcl.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "zendesk1.grabtaxi.com.add.crotjanda.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.awsxcl.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "support-whatsapp.zendesk.com.add.crotjanda.filegear-sg.me"
+pattern = "bill.neowiz.com.awsxcl.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.add.crotjanda.filegear-sg.me"
+pattern = "ava.game.naver.com.awsxcl.crotjanda.filegear-sg.me"
 custom_domain = true
 
 [vars]
