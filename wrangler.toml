@@ -1,23 +1,23 @@
-name = "SG-Vidio-Alibaba" # todo
+name = "sg-vidio" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "alividio.crotjanda.filegear-sg.me"
+pattern = "alivid.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "img.email1.vidio.com.alividio.crotjanda.filegear-sg.me"
+pattern = "img.email1.vidio.com.alivid.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.cdn.cloudflare.net.alividio.crotjanda.filegear-sg.me"
+pattern = "quiz.int.vidio.com.cdn.cloudflare.net.alivid.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com.alividio.crotjanda.filegear-sg.me"
+pattern = "quiz.vidio.com.alivid.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.alividio.crotjanda.filegear-sg.me"
+pattern = "quiz.staging.vidio.com.alivid.crotjanda.filegear-sg.me"
 custom_domain = true
 
 [vars]
