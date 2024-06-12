@@ -1,23 +1,23 @@
-name = "sg-addonxcl-amz" # todo
+name = "sg-addonxcl-alibaba" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "amazon.crotjanda.filegear-sg.me"
+pattern = "alibaba.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.amazon.crotjanda.filegear-sg.me"
+pattern = "ava.game.naver.com.alibaba.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.amazon.crotjanda.filegear-sg.me"
+pattern = "zendesk1.grabtaxi.com.alibaba.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "vplay.iflix.com.amazon.crotjanda.filegear-sg.me"
+pattern = "support-whatsapp.zendesk.com.alibaba.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "static.cdninstagram.com.amazon.crotjanda.filegear-sg.me"
+pattern = "graph.instagram.com.alibaba.crotjanda.filegear-sg.me"
 custom_domain = true
 
 [vars]
