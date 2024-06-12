@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '90cd4a77-141a-43c9-991b-08263cfe9c10';
 
-let proxyIP = '35.219.50.99'
+let proxyIP = '13.250.131.37'
 
 let sub = '';// 留空则使用内置订阅
 let subconverter = 'url.v1.mk';// clash订阅转换后端，目前使用肥羊的订阅转换功能。自带虚假uuid和host订阅。
@@ -934,7 +934,7 @@ function 配置信息(UUID, 域名地址) {
 	
 	const 传输层协议 = 'ws';
 	const 伪装域名 = 域名地址;
-	const 路径 = '/?ed=2560';
+	const 路径 = '/OnlyRanwal';
 	
 	let 传输层安全 = ['tls',true];
 	const SNI = 域名地址;
@@ -1048,7 +1048,7 @@ ${clash}
 𝚝.𝚖𝚎/onlyranwal
 
 Quotes
-"Jika Tidak Bisa Menjadi Orang Baik, Maka Janganlah Jadi Orang Jahat"
+"Hiduplah Melawan Arus, Karena Hanya Ikan Mati Yang Menyikuti Arus"
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 `;
 	} else {
