@@ -713,13 +713,13 @@ function getวเลสConfig(userIDs, hostName) {
 		return `<h2>V2RAY VLESS CLOUDFLARE</h2>${hashSeparator}\n
 <b>443</b>
 ---------------------------------------------------------------
-<br/>
+
 ${วเลสMain}
 <br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
 ---------------------------------------------------------------
 <b>80</b>
 ---------------------------------------------------------------
-<br/>
+
 ${วเลสSec}
 <br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button><br/>
 ---------------------------------------------------------------`;
