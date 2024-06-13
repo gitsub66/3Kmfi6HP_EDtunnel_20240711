@@ -699,8 +699,8 @@ const ed = 'RUR0dW5uZWw=';
  * @returns {string}
  */
 function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
-	const commonUrlPart2 = `:80?encryption=none&security=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
+	const commonUrlPart2 = `:80?encryption=none&security=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
 	const hashSeparator = "################################################################";
 
 	// Split the userIDs into an array
@@ -713,13 +713,15 @@ function getวเลสConfig(userIDs, hostName) {
 		return `<h2>V2RAY VLESS CLOUDFLARE</h2>${hashSeparator}\n
 <b>443</b>
 ---------------------------------------------------------------
+<br/>
 ${วเลสMain}
-<br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button>
+<br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
 ---------------------------------------------------------------
 <b>80</b>
 ---------------------------------------------------------------
+<br/>
 ${วเลสSec}
-<br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button>
+<br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button><br/>
 ---------------------------------------------------------------`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
