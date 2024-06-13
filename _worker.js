@@ -701,7 +701,7 @@ const ed = 'RUR0dW5uZWw=';
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
 	const commonUrlPart2 = `:80?encryption=none&security=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
-	const hashSeparator = "==============================";
+	const hashSeparator = "======================================";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
@@ -712,18 +712,18 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart2;
 		return `<h2>V2RAY VLESS CLOUDFLARE</h2>${hashSeparator}\n
 <b>TLS PORT 443</b>
-******************
+**************
 
 ${วเลสMain}
 <br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
-******************
+**************
 
 <b>NTLS PORT 80</b>
-******************
+**************
 
 ${วเลสSec}
 <br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button><br/>
-******************`;
+**************`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
 	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
