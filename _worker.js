@@ -716,14 +716,14 @@ function getวเลสConfig(userIDs, hostName) {
 
 ${วเลสMain}
 <br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
-**************
+****************************
 
 <b>NTLS PORT 80</b>
 **************
 
 ${วเลสSec}
 <br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button><br/>
-**************`;
+****************************`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
 	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
