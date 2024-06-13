@@ -701,7 +701,7 @@ const ed = 'RUR0dW5uZWw=';
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
 	const commonUrlPart2 = `:80?encryption=none&security=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
-	const hashSeparator = "################################################################";
+	const hashSeparator = "==============================";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
@@ -712,18 +712,18 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart2;
 		return `<h2>V2RAY VLESS CLOUDFLARE</h2>${hashSeparator}\n
 <b>TLS PORT 443</b>
----------------------------------------------------------------
+******************
 
 ${วเลสMain}
 <br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
----------------------------------------------------------------
+******************
 
 <b>NTLS PORT 80</b>
----------------------------------------------------------------
+******************
 
 ${วเลสSec}
 <br/><button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy 80</button><br/>
----------------------------------------------------------------`;
+******************`;
 	}).join('\n');
 	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
 	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
@@ -735,21 +735,20 @@ ${วเลสSec}
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
-	<title>EDtunnel: configuration</title>
-	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/3Kmfi6HP/EDtunnel if you found it useful!'>
-	<meta name='keywords' content='EDtunnel, cloudflare pages, cloudflare worker, severless'>
+	<title>RIN: configuration</title>
+	<meta name='description' content='This is a tool for generating protocol configurations.'>
+	<meta name='keywords' content='RIN, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<meta property='og:site_name' content='EDtunnel: วเลส configuration' />
+	<meta property='og:site_name' content='RIN: configuration' />
 	<meta property='og:type' content='website' />
-	<meta property='og:title' content='EDtunnel - configuration and subscribe output' />
-	<meta property='og:description' content='Use cloudflare pages and worker severless to implement วเลส protocol' />
+	<meta property='og:title' content='RIN - configuration and subscribe output' />
+	<meta property='og:description' content='Use cloudflare pages and worker severless to implement protocol' />
 	<meta property='og:url' content='https://${hostName}/' />
 	<meta property='og:image' content='https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`วเลส://${userIDs.split(",")[0]}@${hostName}${commonUrlPart}`)}' />
 	<meta name='twitter:card' content='summary_large_image' />
-	<meta name='twitter:title' content='EDtunnel - configuration and subscribe output' />
-	<meta name='twitter:description' content='Use cloudflare pages and worker severless to implement วเลส protocol' />
+	<meta name='twitter:title' content='RIN - configuration and subscribe output' />
+	<meta name='twitter:description' content='Use cloudflare pages and worker severless to implement protocol' />
 	<meta name='twitter:url' content='https://${hostName}/' />
-	<meta name='twitter:image' content='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' />
 	<meta property='og:image:width' content='1500' />
 	<meta property='og:image:height' content='1500' />
 
