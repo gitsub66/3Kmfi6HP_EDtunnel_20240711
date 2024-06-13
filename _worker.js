@@ -701,7 +701,7 @@ const ed = 'RUR0dW5uZWw=';
 function getวเลสConfig(userIDs, hostName) {
 	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
 	const commonUrlPart2 = `:80?encryption=none&security=randomized&type=ws&host=${hostName}&path=%2Fvless-ws#${hostName}`;
-	const hashSeparator = "======================================";
+	const hashSeparator = "===================================";
 
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
