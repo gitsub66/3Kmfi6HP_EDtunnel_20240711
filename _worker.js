@@ -711,13 +711,14 @@ function getวเลสConfig(userIDs, hostName) {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart2;
 		return `<h2>V2RAY VLESS CLOUDFLARE</h2>${hashSeparator}\n
-<b>443</b>
+<b>TLS PORT 443</b>
 ---------------------------------------------------------------
 
 ${วเลสMain}
 <br/><button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy 443</button><br/>
 ---------------------------------------------------------------
-<b>80</b>
+
+<b>NTLS PORT 80</b>
 ---------------------------------------------------------------
 
 ${วเลสSec}
