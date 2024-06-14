@@ -1,11 +1,11 @@
-name = "sg6x" #todo
+name = "us1" #todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg6x.rin.biz.id"
+pattern = "us1.rin.biz.id"
 custom_domain = true
 
 [vars]
