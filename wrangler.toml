@@ -1,71 +1,71 @@
-name = "korea" # todo
+name = "sgdo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "korea.tunneltech.filegear-sg.me"
+pattern = "sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.korea.tunneltech.filegear-sg.me"
+pattern = "ava.game.naver.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.korea.tunneltech.filegear-sg.me"
+pattern = "blog.webex.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.korea.tunneltech.filegear-sg.me"
+pattern = "www.sushiroll.co.id.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.sushiroll.co.id.korea.tunneltech.filegear-sg.me"
+pattern = "blog.sushiroll.co.id.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cdn.appsflyer.com.korea.tunneltech.filegear-sg.me"
+pattern = "cdn.appsflyer.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.korea.tunneltech.filegear-sg.me"
+pattern = "investor.fb.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.korea.tunneltech.filegear-sg.me"
+pattern = "investor.spotify.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "www.joox.com.korea.tunneltech.filegear-sg.me"
+pattern = "www.joox.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.korea.tunneltech.filegear-sg.me"
+pattern = "quiz.staging.vidio.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.korea.tunneltech.filegear-sg.me"
+pattern = "zoomcares.zoom.us.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.korea.tunneltech.filegear-sg.me"
+pattern = "graph.facebook.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "www.help.tinder.com.korea.tunneltech.filegear-sg.me"
+pattern = "www.help.tinder.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "104.16.51.111.korea.tunneltech.filegear-sg.me"
+pattern = "104.16.51.111.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "poe.garena.com.korea.tunneltech.filegear-sg.me"
+pattern = "poe.garena.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "games.axis.co.id.korea.tunneltech.filegear-sg.me"
+pattern = "games.axis.co.id.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.ovo.id.korea.tunneltech.filegear-sg.me"
+pattern = "api.ovo.id.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "edu.udemy.com.korea.tunneltech.filegear-sg.me"
+pattern = "www.udemy.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "104.26.6.171.korea.tunneltech.filegear-sg.me"
+pattern = "104.26.6.171.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.korea.tunneltech.filegear-sg.me"
+pattern = "app.gopay.co.id.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "app-stg.gopay.co.id.korea.tunneltech.filegear-sg.me"
+pattern = "go.appsflyer.com.sgdo.tunneltech.filegear-sg.me"
 custom_domain = true
 
 [vars]
