@@ -5,19 +5,19 @@ name = "hk" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "blog.webex.com.yourdomain.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.yourdomain.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = ".blog.webex.com.yourdomain.com.hk.zellyvpn.filegear-sg.me"
+pattern = ".blog.webex.com.hk.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.yourdomain.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.yourdomain.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
