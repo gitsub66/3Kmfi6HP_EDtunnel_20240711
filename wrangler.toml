@@ -1,23 +1,23 @@
-name = "idnew" # todo
+name = "indoser" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id1.gyzstore.filegear-sg.me"
+pattern = "ind.gyzwir.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id1.gyzstore.filegear-sg.me"
+pattern = "ava.game.naver.com.ind.gyzwir.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.id1.gyzstore.filegear-sg.me"
+pattern = "df.game.naver.com.ind.gyzwir.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "go2.webtoons.com.id1.gyzstore.filegear-sg.me"
+pattern = "quiz.int.vidio.com.ind.gyzwir.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "pub.pmang.com.id1.gyzstore.filegear-sg.me"
+pattern = "quiz.vidio.com.ind.gyzwir.filegear-sg.me"
 custom_domain = true
 
 
