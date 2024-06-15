@@ -10,6 +10,10 @@ custom_domain = true
 [[routes]]
 pattern = "help.viu.com.sg.bjhonstore.my.id"
 custom_domain = true
+[[routes]]
+pattern = "ava.game.naver.com.sg.bjhonstore.my.id"
+custom_domain = true
+
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
