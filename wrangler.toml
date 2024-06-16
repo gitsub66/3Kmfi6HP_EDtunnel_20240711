@@ -1,23 +1,23 @@
-name = "sgdo666" # todo
+name = "peg" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sgdo.vpn-cakill.biz.id"
+pattern = "peg.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sgdo.vpn-cakill.biz.id"
+pattern = "ava.game.naver.com.peg.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "support.duolingo.com.sgdo.vpn-cakill.biz.id"
+pattern = "support.duolingo.com.peg.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "error.growmotion.com.sgdo.vpn-cakill.biz.id"
+pattern = "error.growmotion.com.peg.vpn-cakill.biz.id"
 custom_domain = true
 [[routes]]
-pattern = "paylater-docs.akulaku.com.sgdo.vpn-cakill.biz.id"
+pattern = "paylater-docs.akulaku.com.peg.vpn-cakill.biz.id"
 custom_domain = true
 
 [vars]
