@@ -1,32 +1,32 @@
-name = "sg-ovh-abscell" # todo
+name = "sg-aws" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg2.abscell.my.id"
+pattern = "sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.sg2.abscell.my.id"
+pattern = "cms.ruangguru.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.sg2.abscell.my.id"
+pattern = "gw.ruangguru.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sg2.abscell.my.id"
+pattern = "ava.game.naver.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.sg2.abscell.my.id"
+pattern = "df.game.naver.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "account.pmang.game.naver.com.sg2.abscell.my.id"
+pattern = "account.pmang.game.naver.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "care.pmang.game.naver.com.sg2.abscell.my.id"
+pattern = "care.pmang.game.naver.com.sg1.abscell.my.id"
 custom_domain = true
 [[routes]]
-pattern = "app-stg.gopay.co.id.sg2.abscell.my.id"
+pattern = "app-stg.gopay.co.id.sg1.abscell.my.id"
 custom_domain = true
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
