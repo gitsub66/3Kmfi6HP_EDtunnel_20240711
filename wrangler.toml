@@ -1,23 +1,23 @@
-name = "hk" # todo
+name = "mc" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
+pattern = "mc.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.mc.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = ".blog.webex.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.mc.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.mc.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.hk.zellyvpn.filegear-sg.me"
+pattern = "blog.webex.com.mc.kozel-pytack.xyz"
 custom_domain = true
 
 [vars]
@@ -27,4 +27,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "2b932ecc-50eb-4a07-b760-ce8350c79902"
+UUID = "652d21ac-927f-4612-a500-d7c8335ab37d"
