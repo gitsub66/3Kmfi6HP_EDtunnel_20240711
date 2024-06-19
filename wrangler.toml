@@ -1,23 +1,23 @@
-name = "amazon-isatedu" # todo
+name = "indo-isatedu" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "amzedu.taikuda.filegear-sg.me"
+pattern = "idedu.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "carrier.webex.com.amzedu.taikuda.filegear-sg.me"
+pattern = "carrier.webex.com.idedu.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "stage-7.duolingo.com.amzedu.taikuda.filegear-sg.me"
+pattern = "stage-7.duolingo.com.idedu.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.webex.com.amzedu.taikuda.filegear-sg.me"
+pattern = "api.webex.com.idedu.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.amzedu.taikuda.filegear-sg.me"
+pattern = "blog.webex.com.idedu.taikuda.filegear-sg.me"
 custom_domain = true
 
 [vars]
