@@ -1,23 +1,23 @@
-name = "id" # todo
+name = "ocean" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id.kozel-pytack.xyz"
+pattern = "kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.id.kozel-pytack.xyz"
+pattern = "blog.webex.com.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.id.kozel-pytack.xyz"
+pattern = "blog.webex.com.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.id.kozel-pytack.xyz"
+pattern = "blog.webex.com.kozel-pytack.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.id.kozel-pytack.xyz"
+pattern = "blog.webex.com.kozel-pytack.xyz"
 custom_domain = true
 
 [vars]
