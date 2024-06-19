@@ -1,23 +1,23 @@
-name = "sg-addonxcl-alibaba" # todo
+name = "id-addonxcl-gcp" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "alibaba.taikuda.filegear-sg.me"
+pattern = "idvid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.alibaba.taikuda.filegear-sg.me"
+pattern = "ava.game.naver.com.idvid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.alibaba.taikuda.filegear-sg.me"
+pattern = "quiz.int.vidio.com.alibaba.idvid.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.alibaba.taikuda.filegear-sg.me"
+pattern = "investor.fb.com.idvid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.alibaba.taikuda.filegear-sg.me"
+pattern = "graph.instagram.com.idvid.taikuda.filegear-sg.me"
 custom_domain = true
 
 [vars]
