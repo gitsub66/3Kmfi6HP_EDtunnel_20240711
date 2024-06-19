@@ -8,7 +8,7 @@ compatibility_date = "2023-05-26"
 pattern = "abc.ekomelo.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.ekomelo.filegear-sg.me"
+pattern = "ava.game.naver.com.abc.ekomelo.filegear-sg.me"
 custom_domain = true
 
 [vars]
