@@ -1,23 +1,23 @@
-name = "indo-addon-xcl" # todo
+name = "alibaba-vidio" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idadxcl.taikuda.filegear-sg.me"
+pattern = "alivid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.idadxcl.taikuda.taikuda.filegear-sg.me"
+pattern = "img.email1.vidio.com.alivid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.idadxcl.taikuda.filegear-sg.me"
+pattern = "img.email3.vidio.com.alivid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.idadxcl.taikuda.filegear-sg.me"
+pattern = "quiz.vidio.com.alivid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.idadxcl.taikuda.filegear-sg.me"
+pattern = "quiz.staging.vidio.com.alivid.taikuda.filegear-sg.me"
 custom_domain = true
 
 [vars]
