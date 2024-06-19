@@ -11,7 +11,7 @@ custom_domain = true
 pattern = "ava.game.naver.com.idvid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.alibaba.idvid.filegear-sg.me"
+pattern = "quiz.int.vidio.com.idvid.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
 pattern = "investor.fb.com.idvid.taikuda.filegear-sg.me"
