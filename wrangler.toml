@@ -1,24 +1,25 @@
-name = "indo-isatedu" # todo
+name = "alibaba-addon-xcl" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idedu.taikuda.filegear-sg.me"
+pattern = "aliadd.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "carrier.webex.com.idedu.taikuda.filegear-sg.me"
+pattern = "ava.game.naver.com.aliadd.taikuda.crotjanda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "stage-7.duolingo.com.idedu.taikuda.filegear-sg.me"
+pattern = "quiz.int.vidio.com.aliadd.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "api.webex.com.idedu.taikuda.filegear-sg.me"
+pattern = "investor.fb.com.aliadd.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.idedu.taikuda.filegear-sg.me"
+pattern = "graph.instagram.com.aliadd.taikuda.filegear-sg.me"
 custom_domain = true
+
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
