@@ -5,19 +5,19 @@ name = "sg-linode" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg.rezasenpai.xyz"
+pattern = "xnxx.rezasenpai.xyz"
 custom_domain = true
 [[routes]]
-pattern = "sb.scorecardresearch.com.sg.rezasenpai.xyz"
+pattern = "sb.scorecardresearch.com.xnxx.rezasenpai.xyz"
 custom_domain = true
 [[routes]]
-pattern = "click.axis.co.id.sg.rezasenpai.xyz"
+pattern = "click.axis.co.id.xnxx.rezasenpai.xyz"
 custom_domain = true
 [[routes]]
-pattern = "static-web.prod.vidiocdn.com.sg.rezasenpai.xyz"
+pattern = "static-web.prod.vidiocdn.com.xnxx.rezasenpai.xyz"
 custom_domain = true
 [[routesl]]
-pattern = "Nontontv.vidio.com.sg.rezasenpai.xyz"
+pattern = "Nontontv.vidio.com.xnxx.rezasenpai.xyz"
 custom_domain = true
 
 [vars]
