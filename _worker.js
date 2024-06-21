@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 let userID = 'b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7';
 
 let proxyIP = ['35.219.50.99'];
-let hostnames = ['sg4.aframdani.cloud'];
+let hostnames = ['mysant.my.id'];
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is not valid');
