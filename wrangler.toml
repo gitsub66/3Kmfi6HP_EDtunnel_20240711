@@ -1,4 +1,4 @@
-name = "alibaba" # todo
+name = "ovh" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "mysant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.alibaba.mysant.my.id"
+pattern = "df.game.naver.com.ovh.mysant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.alibaba.mysant.my.id"
+pattern = "ava.game.naver.com.ovh.mysant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.alibaba.mysant.my.id"
+pattern = "quiz.staging.vidio.com.ovh.mysant.my.id"
 custom_domain = true
 [[routes]]
-pattern = "api.instagram.com.alibaba.mysant.my.id"
+pattern = "api.instagram.com.ovh.mysant.my.id"
 custom_domain = true
 
 [vars]
