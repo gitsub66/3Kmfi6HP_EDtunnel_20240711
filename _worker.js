@@ -3,9 +3,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '9309b805-49fc-40f0-9591-1fb7b1948274';
+let userID = '4819b8b0-6a33-4c6c-8d33-c0947ecbe803';
 
-const พร็อกซีไอพีs = ['98.98.49.226'];
+const พร็อกซีไอพีs = ['144.24.78.162'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -49,7 +49,7 @@ export default {
 							},
 						});
 					}
-					case `/fadz`: {
+					case `/fadztech`: {
 						const วเลสConfig = getวเลสConfig(userID, request.headers.get('Host'));
 						return new Response(`${วเลสConfig}`, {
 							status: 200,
@@ -58,7 +58,7 @@ export default {
 							}
 						});
 					};
-					case `/sub/fadz`: {
+					case `/sub/fadztech`: {
 						const url = new URL(request.url);
 						const searchParams = url.searchParams;
 						const วเลสSubConfig = สร้างวเลสSub(userID, request.headers.get('Host'));
@@ -70,7 +70,7 @@ export default {
 							}
 						});
 					};
-					case `/bestip/fadz`: {
+					case `/bestip/fadztech`: {
 						const headers = request.headers;
 						const url = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
