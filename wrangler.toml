@@ -1,68 +1,68 @@
-name = "rackspace" # todo
+name = "fadzvpn1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "rackspace.ngapaktunnelling.xyz"
+pattern = "fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.rackspace.ngapaktunnelling.xyz"
+pattern = "ava.game.naver.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.rackspace.ngapaktunnelling.xyz"
+pattern = "blog.webex.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.rackspae.ngapaktunnelling.xyz"
+pattern = "www.sushiroll.co.id.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.sushiroll.co.id.rackspace.ngapaktunnelling.xyz"
+pattern = "blog.sushiroll.co.id.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cdn.appsflyer.com.rackspace.ngapaktunnelling.xyz"
+pattern = "cdn.appsflyer.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.rackspace.ngapaktunnelling.xyz"
+pattern = "investor.fb.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.rackspace.ngapaktunnelling.xyz"
+pattern = "investor.spotify.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.joox.com.rackspace.ngapaktunnelling.xyz"
+pattern = "www.joox.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.rackspace.ngapaktunnelling.xyz"
+pattern = "quiz.staging.vidio.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.rackspace.ngapaktunnelling.xyz"
+pattern = "zoomcares.zoom.us.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.rackspace.ngapaktunnelling.xyz"
+pattern = "graph.facebook.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.help.tinder.com.rackspace.ngapaktunnelling.xyz"
+pattern = "www.help.tinder.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "poe.garena.com.rackspace.ngapaktunnelling.xyz"
+pattern = "poe.garena.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "games.axis.co.id.rackspace.ngapaktunnelling.xyz"
+pattern = "games.axis.co.id.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.ovo.id.rackspace.ngapaktunnelling.xyz"
+pattern = "api.ovo.id.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "h.facebook.com.rackspace.ngapaktunnelling.xyz"
+pattern = "h.facebook.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.26.6.171.rackspace.ngapaktunnelling.xyz"
+pattern = "104.26.6.171.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.rackspace.ngapaktunnelling.xyz"
+pattern = "app.gopay.co.id.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "go.appsflyer.com.rackspace.ngapaktunnelling.xyz"
+pattern = "go.appsflyer.com.fadzvpn1.ngapaktunnelling.xyz"
 custom_domain = true
 
 [vars]
