@@ -1,68 +1,68 @@
-name = "tut" # todo
+name = "rackspace" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "tut.ngapaktunnelling.xyz"
+pattern = "rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.tut.ngapaktunnelling.xyz"
+pattern = "ava.game.naver.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.tut.ngapaktunnelling.xyz"
+pattern = "blog.webex.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.tut.ngapaktunnelling.xyz"
+pattern = "www.sushiroll.co.id.rackspae.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.sushiroll.co.id.tut.ngapaktunnelling.xyz"
+pattern = "blog.sushiroll.co.id.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cdn.appsflyer.com.tut.ngapaktunnelling.xyz"
+pattern = "cdn.appsflyer.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.tut.ngapaktunnelling.xyz"
+pattern = "investor.fb.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.tut.ngapaktunnelling.xyz"
+pattern = "investor.spotify.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.joox.com.tut.ngapaktunnelling.xyz"
+pattern = "www.joox.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.tut.ngapaktunnelling.xyz"
+pattern = "quiz.staging.vidio.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.tut.ngapaktunnelling.xyz"
+pattern = "zoomcares.zoom.us.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.tut.ngapaktunnelling.xyz"
+pattern = "graph.facebook.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.help.tinder.com.tut.ngapaktunnelling.xyz"
+pattern = "www.help.tinder.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "poe.garena.com.tut.ngapaktunnelling.xyz"
+pattern = "poe.garena.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "games.axis.co.id.tut.ngapaktunnelling.xyz"
+pattern = "games.axis.co.id.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.ovo.id.tut.ngapaktunnelling.xyz"
+pattern = "api.ovo.id.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "h.facebook.com.tut.ngapaktunnelling.xyz"
+pattern = "h.facebook.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.26.6.171.tut.ngapaktunnelling.xyz"
+pattern = "104.26.6.171.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.tut.ngapaktunnelling.xyz"
+pattern = "app.gopay.co.id.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "go.appsflyer.com.tut.ngapaktunnelling.xyz"
+pattern = "go.appsflyer.com.rackspace.ngapaktunnelling.xyz"
 custom_domain = true
 
 [vars]
