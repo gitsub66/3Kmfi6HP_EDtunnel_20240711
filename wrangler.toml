@@ -1,71 +1,86 @@
-name = "fadtech3" # todo
+name = "fadtech4" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "fadtech3.ngapaktunnelling.xyz"
+pattern = "fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "ava.game.naver.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "blog.webex.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.fadtech3.ngapaktunnelling.xyz"
+pattern = "www.sushiroll.co.id.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.sushiroll.co.id.fadtech3.ngapaktunnelling.xyz"
+pattern = "blog.sushiroll.co.id.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cdn.appsflyer.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "cdn.appsflyer.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "investor.fb.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "investor.spotify.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.joox.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "www.joox.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "quiz.staging.vidio.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.fadtech3.ngapaktunnelling.xyz"
+pattern = "zoomcares.zoom.us.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "graph.facebook.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.help.tinder.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "www.help.tinder.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "poe.garena.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "poe.garena.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "games.axis.co.id.fadtech3.ngapaktunnelling.xyz"
+pattern = "games.axis.co.id.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.ovo.id.fadtech3.ngapaktunnelling.xyz"
+pattern = "api.ovo.id.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "h.facebook.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "cdnodeb.visionplus.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.26.6.171.fadtech3.ngapaktunnelling.xyz"
+pattern = "104.26.6.171.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.fadtech3.ngapaktunnelling.xyz"
+pattern = "app.gopay.co.id.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "go.appsflyer.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "go.appsflyer.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "devsupport.webex.com.fadtech3.ngapaktunnelling.xyz"
+pattern = "devsupport.webex.com.fadtech4.ngapaktunnelling.xyz"
+custom_domain = true
+[[routes]]
+pattern = "edu.ruangguru.com.fadtech4.ngapaktunnelling.xyz"
+custom_domain = true
+[[routes]]
+pattern = "fadz.ngapaktunnelling.xyz.fadtech4.ngapaktunnelling.xyz"
+custom_domain = true
+[[routes]]
+pattern = "creativeservices.netflix.com.fadtech4.ngapaktunnelling.xyz"
+custom_domain = true
+[[routes]]
+pattern = "npca.netflix.com.fadtech4.ngapaktunnelling.xyz"
+custom_domain = true
+[[routes]]
+pattern = "gw.ruangguru.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 
 [vars]
