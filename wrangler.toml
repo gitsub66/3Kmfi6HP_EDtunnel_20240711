@@ -26,7 +26,7 @@ custom_domain = true
 pattern = "investor.fb.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.fadtech4.ngapaktunnelling.xyz"
+pattern = "investors.spotify.com.fadtech4.ngapaktunnelling.xyz"
 custom_domain = true
 [[routes]]
 pattern = "www.joox.com.fadtech4.ngapaktunnelling.xyz"
