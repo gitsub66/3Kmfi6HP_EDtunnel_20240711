@@ -5,19 +5,19 @@ name = "id-addonxcl-gcp" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idvid.taikuda.filegear-sg.me"
+pattern = "ovh.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.idvid.taikuda.filegear-sg.me"
+pattern = "df.game.naver.com.ovh.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.idvid.taikuda.filegear-sg.me"
+pattern = "care.pmang.game.naver.com.ovh.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.idvid.taikuda.filegear-sg.me"
+pattern = "slugger.hangame.com.ovh.taikuda.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.idvid.taikuda.filegear-sg.me"
+pattern = "ava.game.naver.com.ovh.taikuda.filegear-sg.me"
 custom_domain = true
 
 [vars]
