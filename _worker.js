@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 let userID = '4819b8b0-6a33-4c6c-8d33-c0947ecbe803';
 
 //const proxyip = ['35.219.50.99'];
-const proxyip = ['173.249.207.151'];
+const proxyip = ['proxy-sg.tidur.cfd'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = proxyip[Math.floor(Math.random() * proxyip.length)];
