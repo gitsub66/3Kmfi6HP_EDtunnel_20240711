@@ -3,10 +3,10 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '4819b8b0-6a33-4c6c-8d33-c0947ecbe803';
+let userID = 'b3bf7776-0451-4ab1-afb6-0f21ef63ddc2';
 
 //const proxyip = ['35.219.50.99'];
-const proxyip = ['proxy-sg.tidur.cfd'];
+const proxyip = ['194.36.179.240'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = proxyip[Math.floor(Math.random() * proxyip.length)];
@@ -888,5 +888,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'ngapaktunnelling.xyz',
+	'fadzvpnproject.xyz',
 	];
