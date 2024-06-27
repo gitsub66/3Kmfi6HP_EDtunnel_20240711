@@ -14,13 +14,13 @@ custom_domain = true
 pattern = "ava.game.naver.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "df.tetewono.my.id"
+pattern = "df.game.naver.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
 pattern = "quiz.int.vidio.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.kontol.tetewono.my.id"
+pattern = "quiz.vidio.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
 pattern = "quiz.staging.vidio.com.kontol.tetewono.my.id"
