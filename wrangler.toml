@@ -8,22 +8,22 @@ compatibility_date = "2023-05-26"
 pattern = "kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.tetewono.my.id"
+pattern = "investor.fb.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.tetewono.my.id"
+pattern = "ava.game.naver.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
 pattern = "df.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.tetewono.my.id"
+pattern = "quiz.int.vidio.com.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.tetewono.my.id"
+pattern = "quiz.vidio.kontol.tetewono.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.tetewono.my.id"
+pattern = "quiz.staging.vidio.com.kontol.tetewono.my.id"
 custom_domain = true
 
 [vars]
