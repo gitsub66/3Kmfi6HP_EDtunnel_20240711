@@ -1,9 +1,45 @@
-name = "cf-worker-ws-dev" # todo
+name = "sg1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
+[[routes]]
+pattern = "sg.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "ava.gane.naver.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "live.iflix.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "server.pubgmobile.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cache.netflix.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "support.zoom.us.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "static.cdninstagram.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investor.fb.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cyf-v2.ff.garena.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "cycdn.ml.youngjoygame.com.sg1.eng-kzlvless.xyz"
+custom_domain = true
+[[routes]]
+pattern = "investor.spotify.com.sg1.eng-kzlvless.xyz"
+
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
@@ -12,4 +48,4 @@ compatibility_date = "2023-05-26"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "1b6c1745-992e-4aac-8685-266c090e50ea,89b64978-6244-4bf3-bf64-67ade4ce5c8f,d342d11e-d424-4583-b36e-524ab1f0afa4"
+UUID = "2caa3fb6-6217-467a-9c88-92c7a7828417"
