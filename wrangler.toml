@@ -1,44 +1,44 @@
-name = "sg1" # todo
+name = "idn2" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg.eng-kzlvless.xyz"
+pattern = "idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.gane.naver.com.sg1.eng-kzlvless.xyz"
+pattern = "ava.gane.naver.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "live.iflix.com.sg1.eng-kzlvless.xyz"
+pattern = "live.iflix.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "server.pubgmobile.com.sg1.eng-kzlvless.xyz"
+pattern = "server.pubgmobile.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.sg1.eng-kzlvless.xyz"
+pattern = "cache.netflix.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.sg1.eng-kzlvless.xyz"
+pattern = "support.zoom.us.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "static.cdninstagram.com.sg1.eng-kzlvless.xyz"
+pattern = "static.cdninstagram.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.sg1.eng-kzlvless.xyz"
+pattern = "investor.fb.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.sg1.eng-kzlvless.xyz"
+pattern = "zaintest.vuclip.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cyf-v2.ff.garena.com.sg1.eng-kzlvless.xyz"
+pattern = "cyf-v2.ff.garena.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cycdn.ml.youngjoygame.com.sg1.eng-kzlvless.xyz"
+pattern = "cycdn.ml.youngjoygame.com.idn2.eng-kzlvless.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.spotify.com.sg1.eng-kzlvless.xyz"
+pattern = "investor.spotify.com.idn2.eng-kzlvless.xyz"
 
 
 [vars]
@@ -48,4 +48,4 @@ pattern = "investor.spotify.com.sg1.eng-kzlvless.xyz"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "2caa3fb6-6217-467a-9c88-92c7a7828417"
+UUID = "9ab84d60-a223-4aa7-8000-8c958b438a3d"
