@@ -1,14 +1,14 @@
-name = "abc" # todo
+name = "xcl" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "abc.ekomelo.filegear-sg.me"
+pattern = "xcl.ekomelo.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.abc.ekomelo.filegear-sg.me"
+pattern = "ava.game.naver.com.xcl.ekomelo.filegear-sg.me"
 custom_domain = true
 
 [vars]
