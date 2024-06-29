@@ -1,86 +1,26 @@
-name = "ID" # todo
+name = "SG" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "id.clubvpn.filegear-sg.me"
+pattern = "sg.clubvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "mssdk24-normal-useast2a.tiktokv.com.id.clubvpn.filegear-sg.me"
+pattern = "mssdk24-normal-useast2a.tiktokv.com.sg.clubvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.id.clubvpn.filegear-sg.me"
+pattern = "alt-520054260191.s.youtube.com.sg.clubvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "app.genflix.co.id.id.clubvpn.filegear-sg.me"
+pattern = "quiz.int.vidio.com.sg.clubvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.id.clubvpn.filegear-sg.me"
+pattern = "applink.joox.com.sg.clubvpn.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "b.ns.fbcdn.com.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "zaintest.vuclip.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "cache.netflix.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "graph.instagram.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "s.youtube.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "investors.spotify.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "m.pubgmobile.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "img.mobilelegends.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "web.poe.garena.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "dl.cvs.freefiremobile.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "alt-520054260191.s.youtube.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "imgcache.joox.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "applink.joox.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "support.zoom.us.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "img.email1.vidio.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "quiz.staging.vidio.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "blog.webex.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "cdn.appsflayer.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "apac-marketing.tiktok.com.id.clubvpn.filegear-sg.me"
-custom_domain = true
-[[routes]]
-pattern = "artists.tiktok.com.id.clubvpn.filegear-sg.me"
+pattern = "b.ns.fbcdn.com.sg.clubvpn.filegear-sg.me"
 custom_domain = true
 
 [vars]
