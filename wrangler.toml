@@ -1,4 +1,4 @@
-name = "SG" # todo
+name = "ALIBABA" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -40,4 +40,4 @@ proxyip = "138.2.104.102"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "f3c31bef-da4a-4309-aafe-ebf0e7812f0d"
+UUID = "e6c6333e-a088-4599-87bf-c0378c4cc709"
