@@ -1,4 +1,4 @@
-name = "sg" # todo
+name = "sgdo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "sg.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "shopee.co.id.sg.muhno.my.id"
+pattern = "shopee.co.id.sgdo.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.sg.muhno.my.id"
+pattern = "quiz.staging.vidio.com.sgdo.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.sg.muhno.my.id"
+pattern = "ava.game.naver.com.sgdo.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.sg.muhno.my.id"
+pattern = "cvs-deo.shopeemobile.com.sgdo.muhno.my.id"
 custom_domain = true
 
 [vars]
