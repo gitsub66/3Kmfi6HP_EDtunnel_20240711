@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = ['8.219.210.64'];
+const พร็อกซีไอพีs = [''];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -699,7 +699,8 @@ const ed = 'RUR0dW5uZWw=';
  * @returns {string}
  */
 function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vless#vless`;
+	const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/vless#vless`;
 	const hashSeparator = "################################################################";
 
 	// Split the userIDs into an array
@@ -708,8 +709,8 @@ function getวเลสConfig(userIDs, hostName) {
 	// Prepare output string for each userID
 	const output = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
+		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
+		return `<h2>VLESS FREE</h2>${hashSeparator}\nv2ray default ip
 ---------------------------------------------------------------
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
