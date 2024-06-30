@@ -1,23 +1,23 @@
-name = "sgdo" # todo
+name = "id" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sgdo.clubvpn.filegear-sg.me"
+pattern = "id.aquavless.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "mssdk24-normal-useast2a.tiktokv.com.sgdo.clubvpn.filegear-sg.me"
+pattern = "quiz.int.vidio.com.id.aquavless.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.sgdo.clubvpn.filegear-sg.me"
+pattern = "m.pubgmobile.com.id.aquavless.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.sgdo.clubvpn.filegear-sg.me"
+pattern = "graph.instagram.com.id.aquavless.filegear-sg.me"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.sgdo.clubvpn.filegear-sg.me"
+pattern = "applink.joox.com.id.aquavless.filegear-sg.me"
 custom_domain = true
 
 [vars]
