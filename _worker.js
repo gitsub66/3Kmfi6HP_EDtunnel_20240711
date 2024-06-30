@@ -710,7 +710,7 @@ function getวเลสConfig(userIDs, hostName) {
 	const output = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
 		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
-		return `<h2>VLESS FREE</h2>${hashSeparator}\nv2ray default ip
+		return `<h2>VLESS-FREE</h2>${hashSeparator}\nv2ray default ip
 ---------------------------------------------------------------
 ${วเลสMain}
 <button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
