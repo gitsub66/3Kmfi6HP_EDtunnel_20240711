@@ -3,16 +3,29 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
+let yourName = "Noysz"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];
+//const พร็อกซีไอพีs = ['194.36.179.237'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
-let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
+//let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
 // use single พร็อกซีไอพี instead of random
-// let พร็อกซีไอพี = 'cdn.xn--b6gac.eu.org';
+let พร็อกซีไอพี = '146.56.162.25';
 // ipv6 พร็อกซีไอพี example remove comment to use
 // let พร็อกซีไอพี = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
+
+async function nameASN(ip){
+	let responseASNLookup = await fetch(`https://ip.rootnet.in/lookup/${ip}`)
+	let dataASNLookup = await responseASNLookup.json()
+	let dataNameASN = dataASNLookup.as.name
+    let splitName = dataNameASN.split("-")
+    if (splitName[1]) {
+		return `${splitName[0]}-${splitName[1]}`
+	} else {
+		return `${splitName[0]}`
+	}
+}
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
@@ -31,7 +44,7 @@ export default {
 		// uuid_validator(request);
 		try {
 			userID = env.UUID || userID;
-			พร็อกซีไอพี = env.PROXYIP || พร็อกซีไอพี;
+			พร็อกซีไอพี = env.พร็อกซีไอพี || พร็อกซีไอพี;
 			dohURL = env.DNS_RESOLVER_URL || dohURL;
 			let userID_Path = userID;
 			if (userID.includes(',')) {
@@ -48,9 +61,9 @@ export default {
 								"Content-Type": "application/json;charset=utf-8",
 							},
 						});
-					}
-					case `/${userID_Path}`: {
-						const วเลสConfig = getวเลสConfig(userID, request.headers.get('Host'));
+					};
+					case `/akunvless`: {
+						const วเลสConfig = await getวเลสConfig(userID, request.headers.get('Host'));
 						return new Response(`${วเลสConfig}`, {
 							status: 200,
 							headers: {
@@ -698,8 +711,9 @@ const ed = 'RUR0dW5uZWw=';
  * @param {string | null} hostName
  * @returns {string}
  */
-function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
+async function getวเลสConfig(userIDs, hostName) {
+	let configRemarks = `${await nameASN(พร็อกซีไอพี)}-${yourName}`
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${configRemarks}`;
 	const hashSeparator = "################################################################";
 
 	// Split the userIDs into an array
