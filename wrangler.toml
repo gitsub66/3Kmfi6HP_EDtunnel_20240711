@@ -23,7 +23,6 @@ custom_domain = true
 pattern = "api.instagram.com.sg.noyszfourfect.xyz"
 custom_domain = true
 
-
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
