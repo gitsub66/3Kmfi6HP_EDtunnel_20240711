@@ -5,7 +5,7 @@ name = "indog" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "bidji-7.patunganvps.net"
+pattern = "patunganvps.net"
 custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.bidji-7.patunganvps.net"
