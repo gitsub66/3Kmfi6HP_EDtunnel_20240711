@@ -8,10 +8,10 @@ compatibility_date = "2023-05-26"
 pattern = "patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.bidji-7.patunganvps.net"
+pattern = "ava.game.naver.com.indog.patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.bidji-7.patunganvps.net"
+pattern = "df.game.naver.com.indog.patunganvps.net"
 custom_domain = true
 
 [vars]
