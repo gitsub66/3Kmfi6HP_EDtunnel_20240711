@@ -1,5 +1,5 @@
 name = "tes" # todo
-#name = "cf-worker-connect-test" # todo
+#name = "cf-worker-connect-test" # todop
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
