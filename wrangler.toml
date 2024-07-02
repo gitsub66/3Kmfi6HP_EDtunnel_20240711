@@ -11,7 +11,7 @@ custom_domain = true
 pattern = "ava.game.naver.com.bidji-7.patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.bidji-7.patunganvps.netd"
+pattern = "df.game.naver.com.bidji-7.patunganvps.net"
 custom_domain = true
 [[routes]]
 pattern = "cvs-deo.shopeemobile.com.bidji-7.patunganvps.net"
