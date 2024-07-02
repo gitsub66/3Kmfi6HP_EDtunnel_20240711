@@ -1,26 +1,26 @@
-name = "sg3" # todo
+name = "sg4" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg3.fahrilvpn.my.id"
+pattern = "sg4.fahrilvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.sg3.fahrilvpn.my.id"
+pattern = "cms.ruangguru.com.sg4.fahrilvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.sg3.fahrilvpn.my.id"
+pattern = "gw.ruangguru.com.sg4.fahrilvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "udemy.com.sg3.fahrilvpn.my.id"
+pattern = "udemy.com.sg4.fahrilvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.sg3.fahrilvpn.my.id"
+pattern = "quiz.int.vidio.com.sg4.fahrilvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blue.blibli.com.sg3.fahrilvpn.my.id"
+pattern = "blue.blibli.com.sg4.fahrilvpn.my.id"
 custom_domain = true
 
 [vars]
