@@ -1,4 +1,4 @@
-name = "vip" # todo
+name = "vip1" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "vip.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.vip.muhno.my.id"
+pattern = "ava.game.naver.com.vip1.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.vip.muhno.my.id"
+pattern = "blog.webex.com.vip1.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.vip.muhno.my.id"
+pattern = "quiz.staging.vidio.com.vip1.muhno.my.id"
 custom_domain = true
 [[routes]]
-pattern = "suport.duolingo.com.vip.muhno.my.id"
+pattern = "suport.duolingo.com.vip1.muhno.my.id"
 custom_domain = true
 
 [vars]
@@ -27,4 +27,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "c87d4795-af60-46b9-87ce-7f754bdc9c0f"
+UUID = "c87d4795-af60-46b9-87ce-7f754bdc9c0f,97781dac-9446-4be7-934e-75b81129b065,4f488022-893f-4cc7-abaa-f4c1a45fc46b"
