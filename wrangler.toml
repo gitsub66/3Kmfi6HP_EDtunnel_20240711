@@ -5,19 +5,19 @@ name = "do" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "do.muhno.my.id"
+pattern = "do.muhnovip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.do.muhno.my.id"
+pattern = "ava.game.naver.com.do.muhnovip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.do.muhno.my.id"
+pattern = "blog.webex.com.do.muhnovip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.do.muhno.my.id"
+pattern = "quiz.staging.vidio.com.do.muhnovip.my.id"
 custom_domain = true
 [[routes]]
-pattern = "suport.duolingo.com.do.muhno.my.id"
+pattern = "suport.duolingo.com.do.muhnovip.my.id"
 custom_domain = true
 
 [vars]
@@ -27,4 +27,4 @@ custom_domain = true
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "835d0401-6f08-40b1-8e5c-4642a02d8672,97781dac-9446-4be7-934e-75b81129b065,4f488022-893f-4cc7-abaa-f4c1a45fc46b"
+UUID = "394ffc4e-1a4a-437b-9a7b-c70e03ec781a,97781dac-9446-4be7-934e-75b81129b065,4f488022-893f-4cc7-abaa-f4c1a45fc46b"
