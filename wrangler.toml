@@ -1,4 +1,4 @@
-name = "bidji-7" # todo
+name = "bidji7" # todo
 #name = "cf-worker-connect-test" # todop
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
@@ -8,16 +8,16 @@ compatibility_date = "2023-05-26"
 pattern = "patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.bidji-7.patunganvps.net"
+pattern = "ava.game.naver.com.bidji7.patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "df.game.naver.com.bidji-7.patunganvps.net"
+pattern = "df.game.naver.com.bidji7.patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "cvs-deo.shopeemobile.com.bidji-7.patunganvps.net"
+pattern = "cvs-deo.shopeemobile.com.bidji7.patunganvps.net"
 custom_domain = true
 [[routes]]
-pattern = "shopee.co.id.bidji-7.patunganvps.net"
+pattern = "shopee.co.id.bidji7.patunganvps.net"
 custom_domain = true
 
 [vars]
