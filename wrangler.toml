@@ -22,7 +22,7 @@ pattern = "cvs-deo.shopeemobile.com.indo.syarifahsatya.biz.id
 custom_domain = true
 
 [vars]
-# UUID = "d6a45baf-6dc4-43d5-ab45-6ce08a8dd8d2"
+# UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
 # DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
 # NODE_ID = "1"
