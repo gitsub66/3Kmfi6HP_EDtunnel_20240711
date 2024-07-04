@@ -1,23 +1,44 @@
-name = "sg-oracle" # todo
+name = "sg-vless" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "sg-oracle.vip-server.cloud"
+pattern = "sg-vless.vip-server.cloud"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.sg-oracle.vip-server.cloud"
+pattern = "ilped.isppaintechidn.cloud.sg-vless.vip-server.cloud"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.sg-oracle.vip-server.cloud"
+pattern = "gw.ruangguru.com.sg-vless.vip-server.cloud"
 custom_domain = true
 [[routes]]
-pattern = "img.email1.vidio.com.sg-oracle.vip-server.cloud"
+pattern = "blog.webex.com.sg-vless.vip-server.cloud"
 custom_domain = true
 [[routes]]
-pattern = "nontontv.vidio.com.sg-oracle.vip-server.cloud"
+pattern = "creativeservices.netflix.com.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "cdn.appsflyer.com.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "www.sushiroll.co.id.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "support.udemy.com.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "cdn-cf.zoom.us.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "df.game.naver.com.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "nontontv.vidio.com.sg-vless.vip-server.cloud"
+custom_domain = true
+[[routes]]
+pattern = "investors.spotify.com.sg-vless.vip-server.cloud"
 custom_domain = true
 
 [vars]
