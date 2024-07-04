@@ -6,22 +6,22 @@ main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
 pattern = "indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 [[routes]]
 pattern = "df.game.naver.com.indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 [[routes]]
 pattern = "bbsdata.df.game.naver.com.indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 [[routes]]
 pattern = "account.pmang.game.naver.com.indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 [[routes]]
 pattern = "sogood.linefriends.com.indo.nhanjivip.xyz"
-custom domain = true
+custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
