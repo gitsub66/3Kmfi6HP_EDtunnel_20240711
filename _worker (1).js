@@ -723,12 +723,12 @@ function getวเลสConfig(userIDs, hostName) {
 » Network     : (WS)
 » Path        : /vless
 =====================================
-<b>           🇮🇩 VLESS TLS 🇮🇩</b>
+<b>            VLESS TLS </b>
 =====================================
 ${วเลสMain}
  <button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Click to Copy Vless TLS</button>
 =====================================
-<b>         🇮🇩 VLESS NONE TLS 🇮🇩</b>
+<b>          VLESS NONE TLS </b>
 =====================================
 ${วเลสSec}
  <button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Click to Copy Vless NTLS</button>
@@ -935,5 +935,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'geotunnel.biz.id',
+	'whxdev.love',
 	];
