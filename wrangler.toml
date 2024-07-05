@@ -1,23 +1,23 @@
-name = "idn" # todo
+name = "sgdo" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "idn.fahrylvpn.my.id"
+pattern = "sgdo.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.idn.fahrylvpn.my.id"
+pattern = "cms.ruangguru.com.sgdo.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.idn.fahrylvpn.my.id"
+pattern = "gw.ruangguru.com.sgdo.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "udemy.com.idn.fahrylvpn.my.id"
+pattern = "udemy.com.sgdo.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.idn.fahrylvpn.my.id"
+pattern = "quiz.int.vidio.com.sgdo.fahrylvpn.my.id"
 custom_domain = true
 
 [vars]
