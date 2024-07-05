@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = [''];
+const พร็อกซีไอพีs = ['34.97.85.97'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -722,18 +722,6 @@ ${วเลสSec}\n
 	}).join('\n');
 	// Prepare header string
 	const header = `
-<div class="container list-unstyled text-center text-light fw-bold mt-5" style="height: 200px;">
-  <div id="Date">..., ...-...-...</div>
-	<ul class="list-unstyled d-flex justify-content-center display-4 h1 fw-bold">
-		<li id="hours">..</li>
-		<li id="point">:</li>
-		<li id="min">..</li>
-		<li id="point">:</li>
-		<li id="sec">..</li>
-  	</ul>
-	<br />
-	<p class="animation fw-bold text-danger mt-2"><i style="height: 30px;">VLESS FREE CLOUDFLARE</i></p>
-</div>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
@@ -755,89 +743,6 @@ ${วเลสSec}\n
 	<meta property='og:image:width' content='1500' />
 	<meta property='og:image:height' content='1500' />
 
-	<style>
-	p{
-		font-size: 19px;
-		color: red;
-		animation-name: textzoom;
-		animation-duration: 1s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-	  }
-	  
-	  @keyframes textzoom {
-		0%{
-		  font-size: 20px;
-		}
-		100%{
-		  font-size: 26px;
-		}
-	  }
-
-	body {
-	  font-family: Arial, sans-serif;
-	  background-color: #000;
-	  color: #fff;
-	  padding: 15px;
-	}
-
-	img {
-	  max-width: 100%;
-	  height: auto;
-	}
-
-	pre {
-	  white-space: pre-wrap;
-	  word-wrap: break-word;
-	  border: 2px solid green;
-	  color: #000;
-	  padding: 6px;
-	  margin: 3px 0;
-	}
-	</style>
-
-	<!-- Add FontAwesome library -->
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  `;
-
-	// Join output with newlines, wrap inside <html> and <body>
-	return `
-  <html>
-  ${htmlHead}
-  <body class="bg-dark">
-  <div style='background-color: transparent; border: none;'>${header}</div>
-  <pre class="text-center text-light">${output1}</pre>
-  <pre class="text-center text-light">${output2}</pre>
-  </body>
-  <script>
-	function copyToClipboard(text) {
-	  navigator.clipboard.writeText(text)
-		.then(() => {
-		  alert("Copied to clipboard");
-		})
-		.catch((err) => {
-		  console.error("Failed to copy to clipboard:", err);
-		});
-	}
-	function jam(){
-		var namaTahun = [ "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember" ];
-		var namaHari = [ "Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu" ];
-		var hari_ini = new Date();
-		document.getElementById('Date').innerHTML = (namaHari[hari_ini.getDay()] + ", " + hari_ini.getDate()+ '-' + namaTahun[hari_ini.getMonth()] + '-' +hari_ini.getFullYear());
-		var h = hari_ini.getHours();
-		var m = hari_ini.getMinutes();
-		var s = hari_ini.getUTCSeconds();
-		var day = h<11 ? 'AM' : 'PM';
-		  h = h<10? '0'+h: h;
-		  m = m<10? '0'+m: m;
-		  s = s<10? '0'+s: s;
-		document.getElementById('hours').innerHTML = h;
-		document.getElementById('min').innerHTML = m;
-		document.getElementById('sec').innerHTML = s;
-	  }var inter = setInterval(jam,1000);
   </script>
   </html>`;
 }
@@ -879,5 +784,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	't.me/Tingkeh',
+	't.me/Whxdev',
 ];
