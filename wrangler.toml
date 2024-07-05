@@ -1,23 +1,23 @@
-name = "akamai" # todo
+name = "jiran" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "akamai.fahrylvpn.my.id"
+pattern = "jiran.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "cms.ruangguru.com.akamai.fahrylvpn.my.id"
+pattern = "cms.ruangguru.com.jiran.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.akamai.fahrylvpn.my.id"
+pattern = "gw.ruangguru.com.jiran.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "udemy.com.akamai.fahrylvpn.my.id"
+pattern = "udemy.com.jiran.fahrylvpn.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.akamai.fahrylvpn.my.id"
+pattern = "quiz.int.vidio.com.jiran.fahrylvpn.my.id"
 custom_domain = true
 
 [vars]
