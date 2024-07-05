@@ -6,66 +6,10 @@ main = "_worker.js"
 compatibility_date = "2023-05-26"
 
 [[routes]]
-pattern = "*.fb.com.xr-atha001.vpnwild.xyz"
+pattern = "wildcard.vpnwild.xyz"
 custom_domain = true
 [[routes]]
-pattern = "*.fb.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.ava.game.naver.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.ava.game.naver.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.webex.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.webex.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.zoom.us.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.zoom.us.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.noice.id.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.noice.id.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.spotify.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.spotify.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.vidio.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.vidio.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.ruangguru.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.ruangguru.com.tr-atha001.vpnwild.xyz"
-custom_domain = true
-
-[[routes]]
-pattern = "*.duolingo.com.xr-atha001.vpnwild.xyz"
-custom_domain = true
-[[routes]]
-pattern = "*.duolingo.com.tr-atha001.vpnwild.xyz"
+pattern = "wildcard.tr-atha001.vpnwild.xyz"
 custom_domain = true
 
 [vars]
