@@ -812,6 +812,10 @@ ${วเลสSec}
 	return `
   <html>
   ${htmlHead}
+  <body>
+  <pre style='background-color: transparent; border: none;'>${header}</pre>
+  <pre>${output}</pre>
+  </body>
   <script>
 	function copyToClipboard(text) {
 	  navigator.clipboard.writeText(text)
