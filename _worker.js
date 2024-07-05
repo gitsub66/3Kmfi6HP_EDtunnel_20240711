@@ -3,9 +3,9 @@ import { connect } from 'cloudflare:sockets';
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '6e6cb97e-57ac-4e8f-ad90-2b2fbb21bc45';
+let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = ['36.219.50.99'];
+const พร็อกซีไอพีs = ['35.219.50.99'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -31,7 +31,7 @@ export default {
 		// uuid_validator(request);
 		try {
 			userID = env.UUID || userID;
-			พร็อกซีไอพี = env.พร็อกซีไอพี || พร็อกซีไอพี;
+			พร็อกซีไอพี = env.PROXYIP || พร็อกซีไอพี;
 			dohURL = env.DNS_RESOLVER_URL || dohURL;
 			let userID_Path = userID;
 			if (userID.includes(',')) {
@@ -49,7 +49,7 @@ export default {
 							},
 						});
 					}
-					case `/geo`: {
+					case `/${userID_Path}`: {
 						const วเลสConfig = getวเลสConfig(userID, request.headers.get('Host'));
 						return new Response(`${วเลสConfig}`, {
 							status: 200,
@@ -58,7 +58,7 @@ export default {
 							}
 						});
 					};
-					case `/sub/geo`: {
+					case `/sub/${userID_Path}`: {
 						const url = new URL(request.url);
 						const searchParams = url.searchParams;
 						const วเลสSubConfig = สร้างวเลสSub(userID, request.headers.get('Host'));
@@ -70,7 +70,7 @@ export default {
 							}
 						});
 					};
-					case `/bestip/geo`: {
+					case `/bestip/${userID_Path}`: {
 						const headers = request.headers;
 						const url = `https://sub.xf.free.hr/auto?host=${request.headers.get('Host')}&uuid=${userID}&path=/`;
 						const bestSubConfig = await fetch(url, { headers: headers });
@@ -699,201 +699,145 @@ const ed = 'RUR0dW5uZWw=';
  * @returns {string}
  */
 function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2Fvless#VLESS-HTTPS`;
-	const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=%2Fvless#VLESS-HTTP`;
-	const hashSeparator = "##########################";
-
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vlesscf#${hostName}`;
+	const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/vlesscf#${hostName}`;
+	
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
 
 	// Prepare output string for each userID
-	const output = userIDArray.map((userID) => {
+	const output1 = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
-		return `
-<body>
-<pre><center>=====================================
-<b>VLESS ACCOUNT INFORMATION</b>
-=====================================</center>
-» Domain      : ${hostName}
-» User ID     : ${userID}
-» Port TLS    : 443
-» Port NTLS   : 80
-» Security    : auto
-» Network     : (WS)
-» Path        : /vless
-=====================================
-<b>           🇮🇩 VLESS TLS 🇮🇩</b>
-=====================================
-${วเลสMain}
- <button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Click to Copy Vless TLS</button>
-=====================================
-<b>         🇮🇩 VLESS NONE TLS 🇮🇩</b>
-=====================================
-${วเลสSec}
- <button class="btn btn-primary" onclick="copyToClipboard('${วเลสSec}')">Click to Copy Vless NTLS</button>
-=====================================`;
+		return `<br /><h5>Vless443</h5>--------------\n
+${วเลสMain}\n
+<button class="border border-3 border-success rounded-4 fw-bold" style="width: 180px; height: 30px;" onclick='copyToClipboard("${วเลสMain}")'><i>Copy Vless 443</i></button>
+<br />`;
 	}).join('\n');
-	const sublink = `https://${hostName}/sub/geo?format=clash`
-	const subbestip = `https://${hostName}/bestip/geo`;
-	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
+	const output2 = userIDArray.map((userID) => {
+		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
+		return `<br /><h5>Vless80</h5>----------------\n
+${วเลสSec}\n
+<button class="border border-3 border-success rounded-4 fw-bold" style="width: 180px; height: 30px;" onclick='copyToClipboard("${วเลสSec}")'><i>Copy Vless 80</i></button>
+<br />`;
+	}).join('\n');
 	// Prepare header string
 	const header = `
-
-<body>
-<center>
-<img src="https://user-images.githubusercontent.com/96859296/185836662-688203b5-a267-4878-99d5-5ad048345d1d.jpg" style="width: 50%"><br><font color="green"><h1><b>GEO PROJECT</br></br></b></h1></font><h3>Jangan Berhenti Berbuat Baik</h3><p class="kata1"><b><i>Harimau mati meninggalkan belang, gajah mati meninggalkan gading, orang mati meninggalkan nama...</b></i></p><p class="kata2"></p><p class="kata3"></p><marquee><b style="color: white;font-size: 18px">.:: </b> <b style="color: Red;font-size:30px">FREE WORKER VLESS CLOUDFLARE</b> <b style="color: white;font-size: 18px"> ::.</b>
-</marquee>
-</center>
-</body>
-</html> 
-<center>
-<a href='//${hostName}/sub/geo' target='_blank'>BASE64</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/geo?format=clash`)}}' target='_blank'>Clash for Windows </a>
-<a href='${clash_link}' target='_blank'>Clash </a>
-<a href='${subbestip}' target='_blank'>Best IP</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash </a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>Singbox </a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>Nekobox </a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG </a></p>`;
+<div class="container list-unstyled text-center text-light fw-bold mt-5" style="height: 200px;">
+  <div id="Date">..., ...-...-...</div>
+	<ul class="list-unstyled d-flex justify-content-center display-4 h1 fw-bold">
+		<li id="hours">..</li>
+		<li id="point">:</li>
+		<li id="min">..</li>
+		<li id="point">:</li>
+		<li id="sec">..</li>
+  	</ul>
+	<br />
+	<p class="animation fw-bold text-danger mt-2"><i style="height: 30px;">VLESS FREE CLOUDFLARE</i></p>
+</div>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
-	<title>GEO PROJECT</title>
+	<title>Vless Free</title>
+	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/3Kmfi6HP/EDtunnel if you found it useful!'>
+	<meta name='keywords' content='EDtunnel, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
-	<meta property='og:site_name' content='GEO: วเลส configuration' />
+	<meta property='og:site_name' content='EDtunnel: วเลส configuration' />
 	<meta property='og:type' content='website' />
-	<meta property='og:title' content='GEO - Bismillah' />
+	<meta property='og:title' content='EDtunnel - วเลส configuration and subscribe output' />
 	<meta property='og:description' content='Use cloudflare pages and worker severless to implement วเลส protocol' />
 	<meta property='og:url' content='https://${hostName}/' />
 	<meta property='og:image' content='https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(`วเลส://${userIDs.split(",")[0]}@${hostName}${commonUrlPart}`)}' />
 	<meta name='twitter:card' content='summary_large_image' />
-	<meta name='twitter:title' content='GEO - วเลส configuration and subscribe output' />
+	<meta name='twitter:title' content='EDtunnel - วเลส configuration and subscribe output' />
 	<meta name='twitter:description' content='Use cloudflare pages and worker severless to implement วเลส protocol' />
 	<meta name='twitter:url' content='https://${hostName}/' />
+	<meta name='twitter:image' content='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' />
 	<meta property='og:image:width' content='1500' />
 	<meta property='og:image:height' content='1500' />
 
-<meta charset="UTF-8">
+	<style>
+	p{
+		font-size: 19px;
+		color: red;
+		animation-name: textzoom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	  }
+	  
+	  @keyframes textzoom {
+		0%{
+		  font-size: 20px;
+		}
+		100%{
+		  font-size: 26px;
+		}
+	  }
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	body {
+	  font-family: Arial, sans-serif;
+	  background-color: #000;
+	  color: #fff;
+	  padding: 15px;
+	}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	img {
+	  max-width: 100%;
+	  height: auto;
+	}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	pre {
+	  white-space: pre-wrap;
+	  word-wrap: break-word;
+	  border: 2px solid green;
+	  color: #000;
+	  padding: 6px;
+	  margin: 3px 0;
+	}
+	</style>
 
-<style>
-
-.limited-width {
-
-    max-width: 10px;
-
-    overflow: auto;
-
-    word-wrap: break-word;
-
-}
-
-</style>
-
-</head>
-
-<script>
-
-function copyToClipboard(text) {
-
-  const input = document.createElement('textarea');
-
-  input.style.position = 'fixed';
-
-  input.style.opacity = 0;
-
-  input.value = text;
-
-  document.body.appendChild(input);
-
-  input.select();
-
-  document.execCommand('Copy');
-
-  document.body.removeChild(input);
-
-  alert('已复制到剪贴板');
-
-}
-
-</script>
-
-	<html>
-
-<head>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        color: #333;
-        padding: 10px;
-    }
-
-    a {
-        color: #1a0dab;
-        text-decoration: none;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    pre {
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        padding: 15px;
-        margin: 10px 0;
-    }
-
-    @media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #f0f0f0;
-    }
-
-    a {
-        color: #9db4ff;
-    }
-
-    pre {
-        background-color: #282a36;
-        border-color: #6272a4;
-    }
-    }
-    </style>
-
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-</head>
+	<!-- Add FontAwesome library -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
   `;
 
 	// Join output with newlines, wrap inside <html> and <body>
 	return `
   <html>
   ${htmlHead}
-  <body>
-  <pre style='background-color: transparent; border: none;'>${header}</pre>
-  <pre>${output}</pre>
+  <body class="bg-dark">
+  <div style='background-color: transparent; border: none;'>${header}</div>
+  <pre class="text-center text-light">${output1}</pre>
+  <pre class="text-center text-light">${output2}</pre>
   </body>
   <script>
 	function copyToClipboard(text) {
 	  navigator.clipboard.writeText(text)
 		.then(() => {
-		  alert("Copied to clipboard ✅");
+		  alert("Copied to clipboard");
 		})
 		.catch((err) => {
 		  console.error("Failed to copy to clipboard:", err);
 		});
 	}
+	function jam(){
+		var namaTahun = [ "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember" ];
+		var namaHari = [ "Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu" ];
+		var hari_ini = new Date();
+		document.getElementById('Date').innerHTML = (namaHari[hari_ini.getDay()] + ", " + hari_ini.getDate()+ '-' + namaTahun[hari_ini.getMonth()] + '-' +hari_ini.getFullYear());
+		var h = hari_ini.getHours();
+		var m = hari_ini.getMinutes();
+		var s = hari_ini.getUTCSeconds();
+		var day = h<11 ? 'AM' : 'PM';
+		  h = h<10? '0'+h: h;
+		  m = m<10? '0'+m: m;
+		  s = s<10? '0'+s: s;
+		document.getElementById('hours').innerHTML = h;
+		document.getElementById('min').innerHTML = m;
+		document.getElementById('sec').innerHTML = s;
+	  }var inter = setInterval(jam,1000);
   </script>
   </html>`;
 }
@@ -903,8 +847,8 @@ const เซ็ตพอร์ตHttps = new Set([443, 8443, 2053, 2096, 2087, 2
 
 function สร้างวเลสSub(ไอดีผู้ใช้_เส้นทาง, ชื่อโฮสต์) {
 	const อาร์เรย์ไอดีผู้ใช้ = ไอดีผู้ใช้_เส้นทาง.includes(',') ? ไอดีผู้ใช้_เส้นทาง.split(',') : [ไอดีผู้ใช้_เส้นทาง];
-	const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2Fvless#`;
-	const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${ชื่อโฮสต์}&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2Fvless#`;
+	const ส่วนUrlทั่วไปHttp = `?encryption=none&security=none&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
+	const ส่วนUrlทั่วไปHttps = `?encryption=none&security=tls&sni=${ชื่อโฮสต์}&fp=random&type=ws&host=${ชื่อโฮสต์}&path=%2F%3Fed%3D2048#`;
 
 	const ผลลัพธ์ = อาร์เรย์ไอดีผู้ใช้.flatMap((ไอดีผู้ใช้) => {
 		const การกำหนดค่าHttp = Array.from(เซ็ตพอร์ตHttp).flatMap((พอร์ต) => {
@@ -935,5 +879,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'fahriyvpn.my.id',
-	];
+	't.me/Tingkeh',
+];
