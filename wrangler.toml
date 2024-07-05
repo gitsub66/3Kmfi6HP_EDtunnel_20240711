@@ -3,16 +3,15 @@ name = "sg1" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
-compatibility_date = "2023-05-26"
-[[routes]]
-pattern = "sg1.heryanatunnel.my.id"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.sg1.heryanatunnel.my.id"
-custom_domain = true
-[[routes]]
-pattern = "ava.game.naver.com.sg1.heryanatunnel.my.id"
-custom_domain = true
+routes = [
+	{ pattern = "support.duolingo.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "devsupport.microsoft.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "info.microsoft.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "emails.microsoft.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "carriers.webex.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "blog.webex.com.heryanatunnel.my.id", custom_domain = true },
+	{ pattern = "teams.microsoft.com.heryanatunnel.my.id", custom_domain = true }
+]
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
