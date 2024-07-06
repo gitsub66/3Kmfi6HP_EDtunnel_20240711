@@ -1,17 +1,17 @@
-name = "iij-jp" # todo
+name = "vms-jp" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "iij-jp.whxdev.love"
+pattern = "vms-jp.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.iij-jp.whxdev.love"
+pattern = "ava.game.naver.com.vms-jp.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.iij-jp.whxdev.love"
+pattern = "quiz.int.vidio.com.vms-jp.whxdev.love"
 custom_domain = true
 
 [vars]
