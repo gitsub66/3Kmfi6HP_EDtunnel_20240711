@@ -13,8 +13,8 @@ custom_domain = true
 [[routes]]
 pattern = "quiz.int.vidio.com.ocl-jp.whxdev.love"
 custom_domain = true
-[vars]
 
+[vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
 # PROXYIP = "1.2.3.4"
 # DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
