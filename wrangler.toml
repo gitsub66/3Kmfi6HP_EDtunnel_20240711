@@ -1,17 +1,17 @@
-name = "bvt-sg" # todo
+name = "akn-sg" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "bvt-sg.whxdev.love"
+pattern = "akn-sg.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.bvt-sg.whxdev.love"
+pattern = "ava.game.naver.com.akn-sg.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.bvt-sg.whxdev.love"
+pattern = "quiz.int.vidio.com.akn-sg.whxdev.love"
 custom_domain = true
 
 [vars]
