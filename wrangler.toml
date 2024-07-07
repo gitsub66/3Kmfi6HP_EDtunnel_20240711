@@ -1,17 +1,17 @@
-name = "alb-sg" # todo
+name = "vtr-sg" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "alb-sg.whxdev.love"
+pattern = "vtr-sg.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.alb-sg.whxdev.love"
+pattern = "ava.game.naver.com.vtr-sg.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "quiz.int.vidio.com.alb-sg.whxdev.love"
+pattern = "quiz.int.vidio.com.vtr-sg.whxdev.love"
 custom_domain = true
 
 [vars]
