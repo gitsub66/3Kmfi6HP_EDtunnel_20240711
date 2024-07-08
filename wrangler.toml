@@ -62,7 +62,7 @@ custom_domain = true
 pattern = "edge-ig-mqtt-p4-shv-04-sin6.facebook.com.idx.cingoyen.my.id"
 custom_domain = true
 [[routes]]
-pattern = "quiz.vidio.com"
+pattern = "quiz.vidio.com.idx.cingoyen.my.id"
 custom_domain = true
 [[routes]]
 pattern = "customlinks.appsflyer.com.idx.cingoyen.my.id"
