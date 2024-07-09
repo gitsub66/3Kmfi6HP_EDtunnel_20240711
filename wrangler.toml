@@ -1,38 +1,47 @@
-name = "gcp-id" # todo
+name = "test-my" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "app.gopay.co.id.gcp-id.whxdev.love"
+pattern = "test-my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.gcp-id.whxdev.love"
+pattern = "ava.game.naver.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.gcp-id.whxdev.love"
+pattern = "app.gopay.co.id.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.gcp-id.whxdev.love"
+pattern = "graph.instagram.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.gcp-id.whxdev.love"
+pattern = "investor.fb.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "m.pubgmobile.com.gcp-id.whxdev.love"
+pattern = "investors.spotify.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "dl.cvs.freefiremobile.com.gcp-id.whxdev.love"
+pattern = "cache.netflix.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.gcp-id.whxdev.love"
+pattern = "m.pubgmobile.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.gcp-id.whxdev.love"
+pattern = "dl.cvs.freefiremobile.com.test.my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "blog.webex.com.gcp-id.whxdev.love"
+pattern = "support.zoom.us.test.my.whxdev.love"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.test.my.whxdev.love"
+custom_domain = true
+[[routes]]
+pattern = "zaintest.vuclip.com.test.my.whxdev.love"
+custom_domain = true
+[[routes]]
+pattern = "blog.webex.com.test.my.whxdev.love"
 custom_domain = true
 
 [vars]
