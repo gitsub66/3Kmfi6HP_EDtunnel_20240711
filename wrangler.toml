@@ -10,39 +10,6 @@ custom_domain = true
 [[routes]]
 pattern = "ava.game.naver.com.test.my.whxdev.love"
 custom_domain = true
-[[routes]]
-pattern = "app.gopay.co.id.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "graph.instagram.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "investor.fb.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "investors.spotify.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "cache.netflix.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "m.pubgmobile.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "dl.cvs.freefiremobile.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "support.zoom.us.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "zaintest.vuclip.com.test.my.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "blog.webex.com.test.my.whxdev.love"
-custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
