@@ -25,9 +25,6 @@ custom_domain = true
 pattern = "cache.netflix.com.test-my.whxdev.love"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.test-my.whxdev.love"
-custom_domain = true
-[[routes]]
 pattern = "quiz.int.vidio.com.test-my.whxdev.love"
 custom_domain = true
 [[routes]]
