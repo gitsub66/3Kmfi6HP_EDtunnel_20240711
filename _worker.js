@@ -5,7 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 
-const พร็อกซีไอพีs = ['cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'workers.cloudflare.cyou'];
+const พร็อกซีไอพีs = ['188.166.231.143'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
 let พร็อกซีไอพี = พร็อกซีไอพีs[Math.floor(Math.random() * พร็อกซีไอพีs.length)];
@@ -699,50 +699,45 @@ const ed = 'RUR0dW5uZWw=';
  * @returns {string}
  */
 function getวเลสConfig(userIDs, hostName) {
-	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=%2F%3Fed%3D2048#${hostName}`;
-	const hashSeparator = "################################################################";
-
+	const commonUrlPart = `:443?encryption=none&security=tls&sni=${hostName}&fp=randomized&type=ws&host=${hostName}&path=/vlesscf#${hostName}`;
+	const commonUrlPart1 = `:80?encryption=none&security=none&fp=randomized&type=ws&host=${hostName}&path=/vlesscf#${hostName}`;
+	
 	// Split the userIDs into an array
 	const userIDArray = userIDs.split(",");
 
 	// Prepare output string for each userID
-	const output = userIDArray.map((userID) => {
+	const output1 = userIDArray.map((userID) => {
 		const วเลสMain = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart;
-		const วเลสSec = atob(pt) + '://' + userID + atob(at) + พร็อกซีไอพี + commonUrlPart;
-		return `<h2>UUID: ${userID}</h2>${hashSeparator}\nv2ray default ip
----------------------------------------------------------------
-${วเลสMain}
-<button onclick='copyToClipboard("${วเลสMain}")'><i class="fa fa-clipboard"></i> Copy วเลสMain</button>
----------------------------------------------------------------
-v2ray with bestip
----------------------------------------------------------------
-${วเลสSec}
-<button onclick='copyToClipboard("${วเลสSec}")'><i class="fa fa-clipboard"></i> Copy วเลสSec</button>
----------------------------------------------------------------`;
+		return `<br /><h5>Vless443</h5>--------------\n
+${วเลสMain}\n
+<button class="border border-3 border-success rounded-4 fw-bold" style="width: 180px; height: 30px;" onclick='copyToClipboard("${วเลสMain}")'><i>Copy Vless 443</i></button>
+<br />`;
 	}).join('\n');
-	const sublink = `https://${hostName}/sub/${userIDArray[0]}?format=clash`
-	const subbestip = `https://${hostName}/bestip/${userIDArray[0]}`;
-	const clash_link = `https://api.v1.mk/sub?target=clash&url=${encodeURIComponent(sublink)}&insert=false&emoji=true&list=false&tfo=false&scv=true&fdn=false&sort=false&new_name=true`;
+	const output2 = userIDArray.map((userID) => {
+		const วเลสSec = atob(pt) + '://' + userID + atob(at) + hostName + commonUrlPart1;
+		return `<br /><h5>Vless80</h5>----------------\n
+${วเลสSec}\n
+<button class="border border-3 border-success rounded-4 fw-bold" style="width: 180px; height: 30px;" onclick='copyToClipboard("${วเลสSec}")'><i>Copy Vless 80</i></button>
+<br />`;
+	}).join('\n');
 	// Prepare header string
 	const header = `
-<p align='center'><img src='https://cloudflare-ipfs.com/ipfs/bafybeigd6i5aavwpr6wvnwuyayklq3omonggta4x2q7kpmgafj357nkcky' alt='图片描述' style='margin-bottom: -50px;'>
-<b style='font-size: 15px;'>Welcome! This function generates configuration for วเลส protocol. If you found this useful, please check our GitHub project for more:</b>
-<b style='font-size: 15px;'>欢迎！这是生成 วเลส 协议的配置。如果您发现这个项目很好用，请查看我们的 GitHub 项目给我一个star：</b>
-<a href='https://github.com/3Kmfi6HP/EDtunnel' target='_blank'>EDtunnel - https://github.com/3Kmfi6HP/EDtunnel</a>
-<iframe src='https://ghbtns.com/github-btn.html?user=USERNAME&repo=REPOSITORY&type=star&count=true&size=large' frameborder='0' scrolling='0' width='170' height='30' title='GitHub'></iframe>
-<a href='//${hostName}/sub/${userIDArray[0]}' target='_blank'>วเลส 节点订阅连接</a>
-<a href='clash://install-config?url=${encodeURIComponent(`https://${hostName}/sub/${userIDArray[0]}?format=clash`)}}' target='_blank'>Clash for Windows 节点订阅连接</a>
-<a href='${clash_link}' target='_blank'>Clash 节点订阅连接</a>
-<a href='${subbestip}' target='_blank'>优选IP自动节点订阅</a>
-<a href='clash://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>Clash优选IP自动</a>
-<a href='sing-box://import-remote-profile?url=${encodeURIComponent(subbestip)}' target='_blank'>singbox优选IP自动</a>
-<a href='sn://subscription?url=${encodeURIComponent(subbestip)}' target='_blank'>nekobox优选IP自动</a>
-<a href='v2rayng://install-config?url=${encodeURIComponent(subbestip)}' target='_blank'>v2rayNG优选IP自动</a></p>`;
-
+<div class="container list-unstyled text-center text-light fw-bold mt-5" style="height: 200px;">
+  <div id="Date">..., ...-...-...</div>
+	<ul class="list-unstyled d-flex justify-content-center display-4 h1 fw-bold">
+		<li id="hours">..</li>
+		<li id="point">:</li>
+		<li id="min">..</li>
+		<li id="point">:</li>
+		<li id="sec">..</li>
+  	</ul>
+	<br />
+	<p class="animation fw-bold text-danger mt-2"><i style="height: 30px;">VLESS FREE CLOUDFLARE</i></p>
+</div>`;
 	// HTML Head with CSS and FontAwesome library
 	const htmlHead = `
   <head>
-	<title>EDtunnel: วเลส configuration</title>
+	<title>Vless Free</title>
 	<meta name='description' content='This is a tool for generating วเลส protocol configurations. Give us a star on GitHub https://github.com/3Kmfi6HP/EDtunnel if you found it useful!'>
 	<meta name='keywords' content='EDtunnel, cloudflare pages, cloudflare worker, severless'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -761,17 +756,32 @@ ${วเลสSec}
 	<meta property='og:image:height' content='1500' />
 
 	<style>
+	p{
+		font-size: 19px;
+		color: red;
+		animation-name: textzoom;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	  }
+	  
+	  @keyframes textzoom {
+		0%{
+		  font-size: 20px;
+		}
+		100%{
+		  font-size: 26px;
+		}
+	  }
+
 	body {
 	  font-family: Arial, sans-serif;
-	  background-color: #f0f0f0;
-	  color: #333;
-	  padding: 10px;
+	  background-color: #000;
+	  color: #fff;
+	  padding: 15px;
 	}
 
-	a {
-	  color: #1a0dab;
-	  text-decoration: none;
-	}
 	img {
 	  max-width: 100%;
 	  height: auto;
@@ -780,31 +790,16 @@ ${วเลสSec}
 	pre {
 	  white-space: pre-wrap;
 	  word-wrap: break-word;
-	  background-color: #fff;
-	  border: 1px solid #ddd;
-	  padding: 15px;
-	  margin: 10px 0;
-	}
-	/* Dark mode */
-	@media (prefers-color-scheme: dark) {
-	  body {
-		background-color: #333;
-		color: #f0f0f0;
-	  }
-
-	  a {
-		color: #9db4ff;
-	  }
-
-	  pre {
-		background-color: #282a36;
-		border-color: #6272a4;
-	  }
+	  border: 2px solid green;
+	  color: #000;
+	  padding: 6px;
+	  margin: 3px 0;
 	}
 	</style>
 
 	<!-- Add FontAwesome library -->
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   `;
 
@@ -812,9 +807,10 @@ ${วเลสSec}
 	return `
   <html>
   ${htmlHead}
-  <body>
-  <pre style='background-color: transparent; border: none;'>${header}</pre>
-  <pre>${output}</pre>
+  <body class="bg-dark">
+  <div style='background-color: transparent; border: none;'>${header}</div>
+  <pre class="text-center text-light">${output1}</pre>
+  <pre class="text-center text-light">${output2}</pre>
   </body>
   <script>
 	function copyToClipboard(text) {
@@ -826,6 +822,22 @@ ${วเลสSec}
 		  console.error("Failed to copy to clipboard:", err);
 		});
 	}
+	function jam(){
+		var namaTahun = [ "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember" ];
+		var namaHari = [ "Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu" ];
+		var hari_ini = new Date();
+		document.getElementById('Date').innerHTML = (namaHari[hari_ini.getDay()] + ", " + hari_ini.getDate()+ '-' + namaTahun[hari_ini.getMonth()] + '-' +hari_ini.getFullYear());
+		var h = hari_ini.getHours();
+		var m = hari_ini.getMinutes();
+		var s = hari_ini.getUTCSeconds();
+		var day = h<11 ? 'AM' : 'PM';
+		  h = h<10? '0'+h: h;
+		  m = m<10? '0'+m: m;
+		  s = s<10? '0'+s: s;
+		document.getElementById('hours').innerHTML = h;
+		document.getElementById('min').innerHTML = m;
+		document.getElementById('sec').innerHTML = s;
+	  }var inter = setInterval(jam,1000);
   </script>
   </html>`;
 }
@@ -867,78 +879,5 @@ function สร้างวเลสSub(ไอดีผู้ใช้_เส้
 }
 
 const cn_hostnames = [
-	'weibo.com',                // Weibo - A popular social media platform
-	'www.baidu.com',            // Baidu - The largest search engine in China
-	'www.qq.com',               // QQ - A widely used instant messaging platform
-	'www.taobao.com',           // Taobao - An e-commerce website owned by Alibaba Group
-	'www.jd.com',               // JD.com - One of the largest online retailers in China
-	'www.sina.com.cn',          // Sina - A Chinese online media company
-	'www.sohu.com',             // Sohu - A Chinese internet service provider
-	'www.tmall.com',            // Tmall - An online retail platform owned by Alibaba Group
-	'www.163.com',              // NetEase Mail - One of the major email providers in China
-	'www.zhihu.com',            // Zhihu - A popular question-and-answer website
-	'www.youku.com',            // Youku - A Chinese video sharing platform
-	'www.xinhuanet.com',        // Xinhua News Agency - Official news agency of China
-	'www.douban.com',           // Douban - A Chinese social networking service
-	'www.meituan.com',          // Meituan - A Chinese group buying website for local services
-	'www.toutiao.com',          // Toutiao - A news and information content platform
-	'www.ifeng.com',            // iFeng - A popular news website in China
-	'www.autohome.com.cn',      // Autohome - A leading Chinese automobile online platform
-	'www.360.cn',               // 360 - A Chinese internet security company
-	'www.douyin.com',           // Douyin - A Chinese short video platform
-	'www.kuaidi100.com',        // Kuaidi100 - A Chinese express delivery tracking service
-	'www.wechat.com',           // WeChat - A popular messaging and social media app
-	'www.csdn.net',             // CSDN - A Chinese technology community website
-	'www.imgo.tv',              // ImgoTV - A Chinese live streaming platform
-	'www.aliyun.com',           // Alibaba Cloud - A Chinese cloud computing company
-	'www.eyny.com',             // Eyny - A Chinese multimedia resource-sharing website
-	'www.mgtv.com',             // MGTV - A Chinese online video platform
-	'www.xunlei.com',           // Xunlei - A Chinese download manager and torrent client
-	'www.hao123.com',           // Hao123 - A Chinese web directory service
-	'www.bilibili.com',         // Bilibili - A Chinese video sharing and streaming platform
-	'www.youth.cn',             // Youth.cn - A China Youth Daily news portal
-	'www.hupu.com',             // Hupu - A Chinese sports community and forum
-	'www.youzu.com',            // Youzu Interactive - A Chinese game developer and publisher
-	'www.panda.tv',             // Panda TV - A Chinese live streaming platform
-	'www.tudou.com',            // Tudou - A Chinese video-sharing website
-	'www.zol.com.cn',           // ZOL - A Chinese electronics and gadgets website
-	'www.toutiao.io',           // Toutiao - A news and information app
-	'www.tiktok.com',           // TikTok - A Chinese short-form video app
-	'www.netease.com',          // NetEase - A Chinese internet technology company
-	'www.cnki.net',             // CNKI - China National Knowledge Infrastructure, an information aggregator
-	'www.zhibo8.cc',            // Zhibo8 - A website providing live sports streams
-	'www.zhangzishi.cc',        // Zhangzishi - Personal website of Zhang Zishi, a public intellectual in China
-	'www.xueqiu.com',           // Xueqiu - A Chinese online social platform for investors and traders
-	'www.qqgongyi.com',         // QQ Gongyi - Tencent's charitable foundation platform
-	'www.ximalaya.com',         // Ximalaya - A Chinese online audio platform
-	'www.dianping.com',         // Dianping - A Chinese online platform for finding and reviewing local businesses
-	'www.suning.com',           // Suning - A leading Chinese online retailer
-	'www.zhaopin.com',          // Zhaopin - A Chinese job recruitment platform
-	'www.jianshu.com',          // Jianshu - A Chinese online writing platform
-	'www.mafengwo.cn',          // Mafengwo - A Chinese travel information sharing platform
-	'www.51cto.com',            // 51CTO - A Chinese IT technical community website
-	'www.qidian.com',           // Qidian - A Chinese web novel platform
-	'www.ctrip.com',            // Ctrip - A Chinese travel services provider
-	'www.pconline.com.cn',      // PConline - A Chinese technology news and review website
-	'www.cnzz.com',             // CNZZ - A Chinese web analytics service provider
-	'www.telegraph.co.uk',      // The Telegraph - A British newspaper website	
-	'www.ynet.com',             // Ynet - A Chinese news portal
-	'www.ted.com',              // TED - A platform for ideas worth spreading
-	'www.renren.com',           // Renren - A Chinese social networking service
-	'www.pptv.com',             // PPTV - A Chinese online video streaming platform
-	'www.liepin.com',           // Liepin - A Chinese online recruitment website
-	'www.881903.com',           // 881903 - A Hong Kong radio station website
-	'www.aipai.com',            // Aipai - A Chinese online video sharing platform
-	'www.ttpaihang.com',        // Ttpaihang - A Chinese celebrity popularity ranking website
-	'www.quyaoya.com',          // Quyaoya - A Chinese online ticketing platform
-	'www.91.com',               // 91.com - A Chinese software download website
-	'www.dianyou.cn',           // Dianyou - A Chinese game information website
-	'www.tmtpost.com',          // TMTPost - A Chinese technology media platform
-	'www.douban.com',           // Douban - A Chinese social networking service
-	'www.guancha.cn',           // Guancha - A Chinese news and commentary website
-	'www.so.com',               // So.com - A Chinese search engine
-	'www.58.com',               // 58.com - A Chinese classified advertising website
-	'www.cnblogs.com',          // Cnblogs - A Chinese technology blog community
-	'www.cntv.cn',              // CCTV - China Central Television official website
-	'www.secoo.com',            // Secoo - A Chinese luxury e-commerce platform
+	't.me/Tingkeh',
 ];
