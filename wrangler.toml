@@ -5,12 +5,6 @@ name = "gcp-id" # todo
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "gcp-id.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "ava.game.naver.com.gcp-id.whxdev.love"
-custom_domain = true
-[[routes]]
 pattern = "app.gopay.co.id.gcp-id.whxdev.love"
 custom_domain = true
 [[routes]]
@@ -33,9 +27,6 @@ pattern = "dl.cvs.freefiremobile.com.gcp-id.whxdev.love"
 custom_domain = true
 [[routes]]
 pattern = "support.zoom.us.gcp-id.whxdev.love"
-custom_domain = true
-[[routes]]
-pattern = "quiz.int.vidio.com.gcp-id.whxdev.love"
 custom_domain = true
 [[routes]]
 pattern = "zaintest.vuclip.com.gcp-id.whxdev.love"
