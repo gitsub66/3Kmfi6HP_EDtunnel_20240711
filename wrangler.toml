@@ -6,10 +6,10 @@ main = "_worker.js"
 compatibility_date = "2023-05-26"
 
 [[routes]]
-pattern = "wildcard.vpnwild.xyz"
+pattern = "gcp.vpnwild.xyz"
 custom_domain = true
 [[routes]]
-pattern = "wildcard.tr-atha001.vpnwild.xyz"
+pattern = "connect.gcp.vpnwild.xyz"
 custom_domain = true
 
 [vars]
