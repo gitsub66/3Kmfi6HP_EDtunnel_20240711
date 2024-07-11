@@ -1,203 +1,203 @@
-name = "free1" # todo
+name = "free2" # todo
 #name = "cf-worker-connect-test" # todo
 #main = "test/worker/cf-cdn-cgi-trace2.js"
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
 [[routes]]
-pattern = "free1.fadzvpnproject.xyz"
+pattern = "free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ava.game.naver.com.free1.fadzvpnproject.xyz"
+pattern = "ava.game.naver.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.help.tinder.com.free1.fadzvpnproject.xyz"
+pattern = "www.help.tinder.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.sushiroll.co.id.free1.fadzvpnproject.xyz"
+pattern = "www.sushiroll.co.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.sushiroll.co.id.free1.fadzvpnproject.xyz"
+pattern = "blog.sushiroll.co.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cdn.appsflyer.com.free1.fadzvpnproject.xyz"
+pattern = "cdn.appsflyer.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investor.fb.com.free1.fadzvpnproject.xyz"
+pattern = "investor.fb.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "investors.spotify.com.free1.fadzvpnproject.xyz"
+pattern = "investors.spotify.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.joox.com.free1.fadzvpnproject.xyz"
+pattern = "www.joox.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "quiz.staging.vidio.com.free1.fadzvpnproject.xyz"
+pattern = "quiz.staging.vidio.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zoomcares.zoom.us.free1.fadzvpnproject.xyz"
+pattern = "zoomcares.zoom.us.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.facebook.com.free1.fadzvpnproject.xyz"
+pattern = "graph.facebook.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "poe.garena.com.free1.fadzvpnproject.xyz"
+pattern = "poe.garena.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "games.axis.co.id.free1.fadzvpnproject.xyz"
+pattern = "games.axis.co.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "api.ovo.id.free1.fadzvpnproject.xyz"
+pattern = "api.ovo.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cdnodeb.visionplus.free1.fadzvpnproject.xyz"
+pattern = "cdnodeb.visionplus.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.26.6.171.free1.fadzvpnproject.xyz"
+pattern = "104.26.6.171.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "app.gopay.co.id.free1.fadzvpnproject.xyz"
+pattern = "app.gopay.co.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "go.appsflyer.com.free1.fadzvpnproject.xyz"
+pattern = "go.appsflyer.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "edu.ruangguru.com.free1.fadzvpnproject.xyz"
+pattern = "edu.ruangguru.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "creativeservices.netflix.com.free1.fadzvpnproject.xyz"
+pattern = "creativeservices.netflix.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "npca.netflix.free1.fadzvpnproject.xyz"
+pattern = "npca.netflix.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "gw.ruangguru.com.free1.fadzvpnproject.xyz"
+pattern = "gw.ruangguru.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.16.51.111.free1.fadzvpnproject.xyz"
+pattern = "104.16.51.111.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "web.poe.garena.com.free1.fadzvpnproject.xyz"
+pattern = "web.poe.garena.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "static.cdninstagram.com.free1.fadzvpnproject.xyz"
+pattern = "static.cdninstagram.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "dl.cvs.freefiremobile.com.free1.fadzvpnproject.xyz"
+pattern = "dl.cvs.freefiremobile.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.17.74.206.free1.fadzvpnproject.xyz"
+pattern = "104.17.74.206.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.17.3.81.free1.fadzvpnproject.xyz"
+pattern = "104.17.3.81.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "sogood.linefriends.com.free1.fadzvpnproject.xyz"
+pattern = "sogood.linefriends.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.18.29.141.free1.fadzvpnproject.xyz"
+pattern = "104.18.29.141.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "layanan.ruangguru.com.free1.fadzvpnproject.xyz"
+pattern = "layanan.ruangguru.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "help.pornhub.com.free1.fadzvpnproject.xyz"
+pattern = "help.pornhub.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "io.ruangguru.com.free1.fadzvpnproject.xyz"
+pattern = "io.ruangguru.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "graph.instagram.com.free1.fadzvpnproject.xyz"
+pattern = "graph.instagram.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "162.159.130.11.free1.fadzvpnproject.xyz"
+pattern = "162.159.130.11.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "freefiremobile.com.free1.fadzvpnproject.xyz"
+pattern = "freefiremobile.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "edu.udemy.com.free1.fadzvpnproject.xyz"
+pattern = "edu.udemy.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "acces.iflix.com.free1.fadzvpnproject.xyz"
+pattern = "acces.iflix.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "support.zoom.us.free1.fadzvpnproject.xyz"
+pattern = "support.zoom.us.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "cache.netflix.com.free1.fadzvpnproject.xyz"
+pattern = "cache.netflix.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "kuota.axis.co.id.free1.fadzvpnproject.xyz"
+pattern = "kuota.axis.co.id.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.19.143.108.free1.fadzvpnproject.xyz"
+pattern = "104.19.143.108.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "141.193.213.11.free1.fadzvpnproject.xyz"
+pattern = "141.193.213.11.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "openconnect.netflix.com.free1.fadzvpnproject.xyz"
+pattern = "openconnect.netflix.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "www.eu-tiktokforbusiness.com.free1.fadzvpnproject.xyz"
+pattern = "www.eu-tiktokforbusiness.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "z-p4.www.instagram.com.free1.fadzvpnproject.xyz"
+pattern = "z-p4.www.instagram.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "zaintest.vuclip.com.free1.fadzvpnproject.xyz"
+pattern = "zaintest.vuclip.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "whatsapp.net.free1.fadzvpnproject.xyz"
+pattern = "whatsapp.net.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "104.18.34.70.free1.fadzvpnproject.xyz"
+pattern = "104.18.34.70.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "kopsupporten.garena.com.free1.fadzvpnproject.xyz"
+pattern = "kopsupporten.garena.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "testtrackclf.pubmatic.com.free1.fadzvpnproject.xyz"
+pattern = "testtrackclf.pubmatic.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "v.whatsapp.com.free1.fadzvpnproject.xyz"
+pattern = "v.whatsapp.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "pubgmobile.com.free1.fadzvpnproject.xyz"
+pattern = "pubgmobile.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "suporte.garena.com.free1.fadzvpnproject.xyz"
+pattern = "suporte.garena.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "backdoor.farlight84miraclegames.com.free1.fadzvpnproject.xyz"
+pattern = "backdoor.farlight84miraclegames.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "update2.farlight84miraclegames.com.free1.fadzvpnproject.xyz"
+pattern = "update2.farlight84miraclegames.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "go2.facebookinc.com.free1.fadzvpnproject.xyz"
+pattern = "go2.facebookinc.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "status.fb.com.free1.fadzvpnproject.xyz"
+pattern = "status.fb.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "opensource.fb.com.free1.fadzvpnproject.xyz"
+pattern = "opensource.fb.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "blog.x.com.free1.fadzvpnproject.xyz"
+pattern = "blog.x.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "help.twiter.com.free1.fadzvpnproject.xyz"
+pattern = "help.twiter.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "m.mobilelegeds.com.free1.fadzvpnproject.xyz"
+pattern = "m.mobilelegeds.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "ffsupport.garena.com.free1.fadzvpnproject.xyz"
+pattern = "ffsupport.garena.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 [[routes]]
-pattern = "dl.cvs.freefiremobile.com.free1.fadzvpnproject.xyz"
+pattern = "dl.cvs.freefiremobile.com.free2.fadzvpnproject.xyz"
 custom_domain = true
 
 
