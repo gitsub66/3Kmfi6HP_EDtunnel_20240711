@@ -4,6 +4,15 @@ name = "cf-worker-ws-dev" # todo
 #main = "test/worker/worker-connect-test.js"
 main = "_worker.js"
 compatibility_date = "2023-05-26"
+[[routes]]
+pattern = "sg.surrounding.web.id"
+custom_domain = true
+[[routes]]
+pattern = "quiz.int.vidio.com.sg.surrounding.web.id"
+custom_domain = true
+[[routes]]
+pattern = "quiz.vidio.com.sg.surrounding.web.id"
+custom_domain = true
 
 [vars]
 # UUID = "d342d11e-d424-4583-b36e-524ab1f0afa4"
@@ -12,4 +21,4 @@ compatibility_date = "2023-05-26"
 # NODE_ID = "1"
 # API_TOKEN = "example_dev_token"
 # API_HOST = "api.v2board.com"
-UUID = "1b6c1745-992e-4aac-8685-266c090e50ea,89b64978-6244-4bf3-bf64-67ade4ce5c8f,d342d11e-d424-4583-b36e-524ab1f0afa4"
+UUID = "e78adf36-8704-4b54-b6b8-e6aa32ab3ca0"
